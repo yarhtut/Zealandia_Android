@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="info.Zealandia.NavigationDrawerFragment"
+    android:background="@color/background">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/hello_blank_fragment"
+        android:textColor="@color/primaryText"/>-->
+
+
+    <LinearLayout
+        android:id="@+id/containerDrawerImage"
+         android:layout_width="match_parent"
+         android:background="@color/primary"
+
+         android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/drawerImage"
+            android:layout_width="280dp"
+            android:layout_height="140dp"
+            android:src="@drawable/log"/>
+
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/containerDrawerImage"
+        android:id="@+id/drawerList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
+<!-- From: file:/C:/_Android/Zealandia/Zealandia/app/src/main/res/layout/fragment_navigation_drawer.xml -->

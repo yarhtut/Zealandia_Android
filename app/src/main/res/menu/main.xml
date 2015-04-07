@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"/>
+    <item
+        android:id="@+id/newTab"
+        android:orderInCategory="100"
+        android:title="@string/new_tab_layout_setting"/>
+
+   <item android:id="@+id/navigate"
+        android:title="@string/action_bar_next"
+        android:icon="@drawable/nextbtn"
+        android:orderInCategory="100"
+       app:theme="@style/MyCustomToolBarTheme"
+       app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+      ></item>
+
+</menu>
+    <!-- app:theme="@style/MyCustomToolBarTheme"-->
