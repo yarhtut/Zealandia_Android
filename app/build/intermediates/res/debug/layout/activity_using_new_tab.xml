@@ -18,7 +18,6 @@
         android:layout_height="48dp"
         android:layout_below="@+id/app_bar"
         app:iconColor="@color/icons"
-
         app:hasIcons="true"
         app:primaryColor="@color/primary_tab"
         app:accentColor="@color/accent" />
