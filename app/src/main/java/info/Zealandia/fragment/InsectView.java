@@ -23,7 +23,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 
 import info.Zealandia.R;
-import info.Zealandia.adapter.AdapterBirdRecyclerList;
+import info.Zealandia.adapter.AdapterInsectRecyclerList;
 import info.Zealandia.app.AppController;
 import info.Zealandia.model.SanctuaryView;
 
@@ -47,7 +47,7 @@ public class InsectView extends Fragment  {
     private ArrayList<SanctuaryView> birdList = new ArrayList<SanctuaryView>();
     private AppController myVolleySingleton;
     private RecyclerView RecyclerInsect;
-    public AdapterBirdRecyclerList adapter;
+    public AdapterInsectRecyclerList adapter;
 
 
 
@@ -104,7 +104,7 @@ public class InsectView extends Fragment  {
         RecyclerInsect = (RecyclerView) view.findViewById(R.id.RecyclerListBird);
 
         RecyclerInsect.setLayoutManager(new LinearLayoutManager(getActivity()));
-        adapter = new AdapterBirdRecyclerList(getActivity());
+        adapter = new AdapterInsectRecyclerList(getActivity());
         RecyclerInsect.setAdapter(adapter);
         adapter.setListBird(birdList);
 
@@ -115,8 +115,6 @@ public class InsectView extends Fragment  {
                     public void onResponse(JSONArray response) {
                         Log.d(TAG, response.toString());
                         hidePDialog();
-
-
 
                         // Parsing json
                         for (int i = 0; i < response.length(); i++) {

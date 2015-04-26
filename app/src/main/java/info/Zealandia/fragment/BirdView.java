@@ -74,9 +74,7 @@ public class BirdView extends Fragment  {
         return super.toString();
     }
 
-
    // private BirdAdapter adapter;
-
     //   private BirdAdapter adapter;
 
 
@@ -139,8 +137,6 @@ public class BirdView extends Fragment  {
                         // Parsing json
                         for (int i = 0; i < response.length(); i++) {
                             try {
-
-
                                 JSONObject obj = response.getJSONObject(i);
                                 SanctuaryView bird = new SanctuaryView();
                                 bird.setList_name(obj.getString("list_name"));
@@ -168,7 +164,7 @@ public class BirdView extends Fragment  {
                 }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                VolleyLog.d(TAG, "Error: " + error.getMessage());
+                VolleyLog.d(TAG, "Error: bird view " + error.getMessage());
                 hidePDialog();
 
             }

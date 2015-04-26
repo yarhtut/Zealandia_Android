@@ -57,7 +57,7 @@ public class AdapterBirdRecyclerList extends RecyclerView.Adapter<AdapterBirdRec
     public void onBindViewHolder(final ViewHolderRecyclerBird holder, int position) {
         SanctuaryView currentBirds = listBird.get(position);
         holder.list_name.setText(currentBirds.getList_name());
-        //holder.birdThumbnail.setText(currentBirds.getList_name());
+
         holder.list_desc.setText(currentBirds.getList_desc());
         holder.list_points.setText(currentBirds.getList_points());
 

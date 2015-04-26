@@ -143,7 +143,7 @@ public class SanctuaryViewActivity extends ActionBarActivity implements Material
                     fragment =  info.Zealandia.fragment.BirdView.newInstance("", "");
                     break;
                 case TAB_INSECT:
-                    fragment = InsectView.newInstance("", "");
+                    fragment =  info.Zealandia.fragment.BirdView.newInstance("", "");
                     break;
                 case TAB_PLANTS:
                     fragment = info.Zealandia.fragment.BirdView.newInstance("", "");

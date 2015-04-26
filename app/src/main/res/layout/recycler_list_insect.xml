@@ -16,8 +16,8 @@
         android:id="@+id/textViewNameInsect"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/thumbnail"
-        android:layout_toRightOf="@+id/thumbnail"
+        android:layout_alignTop="@+id/thumbnailInsect"
+        android:layout_toRightOf="@+id/thumbnailInsect"
         android:textSize="@dimen/title"
         android:textStyle="bold"
         android:textColor="@color/Name"/>
@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/textViewName"
         android:layout_marginTop="1dip"
-        android:layout_toRightOf="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnailInsect"
         android:textSize="@dimen/rating"
         android:textColor="@color/Desc"/>
 
