@@ -5,7 +5,7 @@
     tools:context="info.Zealandia.fragment.BirdView">
 
     <android.support.v4.widget.SwipeRefreshLayout
-        android:id="@+id/swipeMovieHits"
+        android:id="@+id/swipeBirdList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:divider="@color/list_divider"

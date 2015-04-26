@@ -14,8 +14,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 
-
-
+import info.Zealandia.fragment.InsectView;
+import info.Zealandia.fragment.PlantView;
 import it.neokree.materialtabs.MaterialTab;
 import it.neokree.materialtabs.MaterialTabHost;
 import it.neokree.materialtabs.MaterialTabListener;
@@ -144,10 +144,10 @@ public class SanctuaryViewActivity extends ActionBarActivity implements Material
                     fragment =  info.Zealandia.fragment.BirdView.newInstance("", "");
                     break;
                 case TAB_INSECT:
-                    fragment =info.Zealandia.fragment.BirdView.newInstance("", "");
+                    fragment =  InsectView.newInstance("", "");
                     break;
                 case TAB_PLANTS:
-                    fragment = info.Zealandia.fragment.BirdView.newInstance("", "");
+                    fragment = PlantView.newInstance("", "");
                     break;
             }
             return fragment;

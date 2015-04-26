@@ -60,7 +60,7 @@ public class BirdView extends Fragment  {
 
 
     private static final String TAG = BirdView.class.getSimpleName();
-    private static final String url = "http://yar.cloudns.org/SlimApi/api/list/mobile/bird";
+    private static final String url = "http://yar.cloudns.org/SlimApi/api/list/bird?mobile=1";
     private ProgressDialog pDialog;
     private ArrayList<SanctuaryView> birdList = new ArrayList<SanctuaryView>();
     private AppController myVolleySingleton;
@@ -74,9 +74,7 @@ public class BirdView extends Fragment  {
         return super.toString();
     }
 
-
    // private BirdAdapter adapter;
-
     //   private BirdAdapter adapter;
 
 
@@ -127,7 +125,7 @@ public class BirdView extends Fragment  {
         adapter.setListBird(birdList);
 
         // Creating volley request obj
-        final JsonArrayRequest movieReq = new JsonArrayRequest(url,
+        final JsonArrayRequest birdReq = new JsonArrayRequest(url,
                 new Response.Listener<JSONArray>() {
                     @Override
                     public void onResponse(JSONArray response) {
@@ -139,8 +137,6 @@ public class BirdView extends Fragment  {
                         // Parsing json
                         for (int i = 0; i < response.length(); i++) {
                             try {
-
-
                                 JSONObject obj = response.getJSONObject(i);
                                 SanctuaryView bird = new SanctuaryView();
                                 bird.setList_name(obj.getString("list_name"));
@@ -168,14 +164,14 @@ public class BirdView extends Fragment  {
                 }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                VolleyLog.d(TAG, "Error: " + error.getMessage());
+                Log.d(TAG, "Error: bird view " + error.getMessage());
                 hidePDialog();
 
             }
         });
 
         // Adding request to request queue
-        AppController.getInstance().addToRequestQueue(movieReq);
+        AppController.getInstance().addToRequestQueue(birdReq);
 
 
         return view;
