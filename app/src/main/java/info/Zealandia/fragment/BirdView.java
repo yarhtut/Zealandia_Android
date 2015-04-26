@@ -125,7 +125,7 @@ public class BirdView extends Fragment  {
         adapter.setListBird(birdList);
 
         // Creating volley request obj
-        final JsonArrayRequest movieReq = new JsonArrayRequest(url,
+        final JsonArrayRequest birdReq = new JsonArrayRequest(url,
                 new Response.Listener<JSONArray>() {
                     @Override
                     public void onResponse(JSONArray response) {
@@ -171,7 +171,7 @@ public class BirdView extends Fragment  {
         });
 
         // Adding request to request queue
-        AppController.getInstance().addToRequestQueue(movieReq);
+        AppController.getInstance().addToRequestQueue(birdReq);
 
 
         return view;
