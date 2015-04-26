@@ -60,7 +60,7 @@ public class BirdView extends Fragment  {
 
 
     private static final String TAG = BirdView.class.getSimpleName();
-    private static final String url = "http://yar.cloudns.org/SlimApi/api/list/mobile/bird";
+    private static final String url = "http://yar.cloudns.org/SlimApi/api/list/bird?mobile=1";
     private ProgressDialog pDialog;
     private ArrayList<SanctuaryView> birdList = new ArrayList<SanctuaryView>();
     private AppController myVolleySingleton;
@@ -164,7 +164,7 @@ public class BirdView extends Fragment  {
                 }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                VolleyLog.d(TAG, "Error: bird view " + error.getMessage());
+                Log.d(TAG, "Error: bird view " + error.getMessage());
                 hidePDialog();
 
             }

@@ -42,7 +42,7 @@ public class InsectView extends Fragment  {
 
 
     private static final String TAG = InsectView.class.getSimpleName();
-    private static final String url = "http://yar.cloudns.org/SlimApi/api/list/mobile/bird";
+    private static final String url = "http://yar.cloudns.org/SlimApi/api/list/insects?mobile=1";
     private ProgressDialog pDialog;
     private ArrayList<SanctuaryView> birdList = new ArrayList<SanctuaryView>();
     private AppController myVolleySingleton;

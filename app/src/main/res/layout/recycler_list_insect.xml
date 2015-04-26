@@ -27,7 +27,7 @@
         android:id="@+id/textViewDescInsect"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/textViewName"
+        android:layout_below="@id/textViewNameInsect"
         android:layout_marginTop="1dip"
         android:layout_toRightOf="@+id/thumbnailInsect"
         android:textSize="@dimen/rating"
