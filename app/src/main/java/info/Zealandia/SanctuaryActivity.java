@@ -30,7 +30,7 @@ import info.Zealandia.R;
  */
 public class SanctuaryActivity extends ActionBarActivity {
     private static final String TAG = MainActivity.class.getSimpleName();
-    private static final String url = "http://yar.cloudns.org/SlimApi/api/list/mobile/bird";
+    private static final String url = "http://yar.cloudns.org/SlimApi/api/list/all?mobile=1";
     private ProgressDialog pDialog;
     private List<SanctuaryView> birdList = new ArrayList<SanctuaryView>();
     private ListView listView;

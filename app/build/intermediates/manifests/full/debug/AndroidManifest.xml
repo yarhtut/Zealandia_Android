@@ -9,12 +9,11 @@
         android:targetSdkVersion="21" />
 
     <uses-permission android:name="android.permission.INTERNET" />
-
-    <android:uses-permission
+    <uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         android:maxSdkVersion="22" />
-    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <android:uses-permission
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission
         android:name="android.permission.READ_EXTERNAL_STORAGE"
         android:maxSdkVersion="22" />
 
@@ -40,7 +39,7 @@
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="info.Zealandia.SubActivity"
+            android:name="info.Zealandia.SchoolActivity"
             android:label="Login  " >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -55,11 +54,22 @@
         </activity>
         <activity
             android:name="info.Zealandia.SanctuaryActivity"
-            android:label="Sanctuary" >
+            android:label="School Activity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="info.Zealandia.MainActivity" />
         </activity>
+        <activity
+            android:name="info.Zealandia.LoginActivity"
+            android:label="Login"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="info.Zealandia.RegisterActivity"
+            android:label="Log Out"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name="android.support.v7.widget.TestActivity"
             android:label="RecyclerViewTestActivity" />
