@@ -121,7 +121,7 @@ public class LoginActivity extends Activity {
 						hideDialog();
 
 						try {
-                            Log.d(TAG, "Login Response: 2  " );
+
 
                             //JSONArray jObj = new JSONArray(response);
 
@@ -131,7 +131,7 @@ public class LoginActivity extends Activity {
                             Toast.makeText(getApplicationContext(),
                                     response, Toast.LENGTH_LONG).show();
 
-                            Log.d(TAG, "Login Response: 3  " + success_login);
+                           //Log.d(TAG, "Login Response: 3  " + success_login);
 
 							// Check for error node in json
 							if (success_login) {
@@ -141,8 +141,7 @@ public class LoginActivity extends Activity {
 
 								// Launch main activity
 								Intent intent = new Intent(LoginActivity.this,
-										SanctuaryActivity.class);
-
+										SchoolActivity.class);
 								startActivity(intent);
 								finish();
 							} else {

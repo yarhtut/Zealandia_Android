@@ -1,6 +1,6 @@
 /**
  * Author: Yar Htut
- * URL: www.yarcloudns.org
+ * URL: www.yar.cloudns.org
  * linkedIn: http://linkedin.com/yarunity3d
  * */
 package info.Zealandia.dbhelper;

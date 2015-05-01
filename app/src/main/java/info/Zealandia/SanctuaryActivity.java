@@ -1,13 +1,17 @@
 package info.Zealandia;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
@@ -23,6 +27,8 @@ import java.util.List;
 
 import info.Zealandia.adapter.BirdAdapter;
 import info.Zealandia.app.AppController;
+import info.Zealandia.dbhelper.SQLiteHandler;
+import info.Zealandia.dbhelper.SessionManager;
 import info.Zealandia.model.SanctuaryView;
 import info.Zealandia.R;
 /**
@@ -36,6 +42,10 @@ public class SanctuaryActivity extends ActionBarActivity {
     private ListView listView;
     private BirdAdapter adapter;
 
+
+    private SQLiteHandler db;
+    private SessionManager session;
+
     public Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +58,16 @@ public class SanctuaryActivity extends ActionBarActivity {
 
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        // SqLite database handler
+        db = new SQLiteHandler(getApplicationContext());
+
+        // session manager
+        session = new SessionManager(getApplicationContext());
+
+        if (!session.isLoggedIn()) {
+            logoutUser();
+        }
         listView = (ListView) findViewById(R.id.list);
         adapter = new BirdAdapter(this, birdList);
         listView.setAdapter(adapter);
@@ -71,7 +91,6 @@ public class SanctuaryActivity extends ActionBarActivity {
                         for (int i = 0; i < response.length(); i++) {
                             try {
 
-
                                 JSONObject obj = response.getJSONObject(i);
                                 SanctuaryView bird = new SanctuaryView();
                                 bird.setList_name(obj.getString("list_name"));
@@ -82,15 +101,10 @@ public class SanctuaryActivity extends ActionBarActivity {
                                 birdList.add(bird);
 
 
-                                // adding movie to movies array
-                                //movieList.add(movie);
-
                             } catch (JSONException e) {
                                 e.printStackTrace();
                             }
-
                         }
-
                         // notifying list adapter about data changes
                         // so that it renders the list view with updated data
                         adapter.notifyDataSetChanged();
@@ -106,6 +120,17 @@ public class SanctuaryActivity extends ActionBarActivity {
 
         // Adding request to request queue
         AppController.getInstance().addToRequestQueue(movieReq);
+
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
+                String birdShowPicked = "You selected" +
+                        String.valueOf(adapterView.getItemAtPosition(position));
+                Toast.makeText(SanctuaryActivity.this, birdShowPicked, Toast.LENGTH_LONG).show();
+            }
+        });
+
     }
 
     @Override
@@ -145,5 +170,19 @@ public class SanctuaryActivity extends ActionBarActivity {
        // }
 
         return super.onOptionsItemSelected(item);
+    }
+    /**
+     * Logging out the user. Will set isLoggedIn flag to false in shared
+     * preferences Clears the user data from sqlite users table
+     * */
+    private void logoutUser() {
+        session.setLogin(false);
+
+        db.deleteUsers();
+
+        // Launching the login activity
+        Intent intent = new Intent(SanctuaryActivity.this, LoginActivity.class);
+        startActivity(intent);
+        finish();
     }
 }
