@@ -5,4 +5,4 @@
     <item android:drawable="@drawable/list_row_bg_hover" android:state_pressed="true"/>
     <item android:drawable="@drawable/list_row_bg_hover" android:state_pressed="false" android:state_selected="true"/>
 
-</selector><!-- From: file:/C:/_Android/Zealandia/Zealandia/app/src/main/res/drawable-hdpi/list_row_selector.xml -->
+</selector><!-- From: file:/C:/Users/luke/Documents/Github/ZealandiaMASTER/app/src/main/res/drawable-hdpi/list_row_selector.xml -->

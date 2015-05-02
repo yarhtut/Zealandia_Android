@@ -13,6 +13,7 @@
         android:layout_alignParentLeft="true"
         android:layout_marginRight="8dp" />
 
+
     <!-- Bird Name -->
     <TextView
         android:id="@+id/textViewName"

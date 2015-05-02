@@ -40,4 +40,4 @@
         android:layout_gravity="start"
         app:layout="@layout/fragment_navigation_drawer"
         tools:layout="@layout/fragment_navigation_drawer" />
-</android.support.v4.widget.DrawerLayout><!-- From: file:/C:/_Android/Zealandia/Zealandia/app/src/main/res/layout/activity_main.xml -->
+</android.support.v4.widget.DrawerLayout><!-- From: file:/C:/Users/luke/Documents/Github/ZealandiaMASTER/app/src/main/res/layout/activity_main.xml -->

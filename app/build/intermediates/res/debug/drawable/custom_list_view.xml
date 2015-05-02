@@ -2,4 +2,4 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <stroke android:color="#DDD" android:width="0.1dp"/>
     <corners android:radius="4dp" />
-</shape><!-- From: file:/C:/_Android/Zealandia/Zealandia/app/src/main/res/drawable/custom_list_view.xml -->
+</shape><!-- From: file:/C:/Users/luke/Documents/Github/ZealandiaMASTER/app/src/main/res/drawable/custom_list_view.xml -->

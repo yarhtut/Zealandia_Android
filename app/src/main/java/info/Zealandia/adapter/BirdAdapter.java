@@ -8,14 +8,18 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+import com.android.volley.Cache;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.NetworkImageView;
 
+import java.io.UnsupportedEncodingException;
 import java.util.List;
 
 import info.Zealandia.app.AppController;
 import info.Zealandia.model.SanctuaryView;
 import info.Zealandia.R;
+
+
 
 /**
  * Created by 21104216 on 2/04/2015.
@@ -52,28 +56,36 @@ public class BirdAdapter extends BaseAdapter {
     }
 
     public View getView(int position, View convertView, ViewGroup parent){
+        //class definition for SanctuaryView
+        SanctuaryView bird = birdLists.get(position);
 
         if (inflater == null)
             inflater = (LayoutInflater) activity
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+
         if (convertView == null)
             convertView = inflater.inflate(R.layout.list_row, null);
 
         if (imageLoader == null)
             imageLoader = AppController.getInstance().getImageLoader();
 
-        NetworkImageView thumbNail = (NetworkImageView) convertView
-                .findViewById(R.id.thumbnail);
+
+
+        //check cache for image
+        NetworkImageView thumbNail = (NetworkImageView) convertView.findViewById(R.id.thumbnail);
+
+
+        // thumbnail image
+        thumbNail.setImageUrl(bird.getList_img(), imageLoader);
+
 
         TextView textViewName = (TextView) convertView.findViewById(R.id.textViewName);
         TextView textViewDesc = (TextView) convertView.findViewById(R.id.textViewDesc);
         TextView textViewPoints = (TextView) convertView.findViewById(R.id.textViewPoints);
 
-        //class definition for SanctuaryView
-        SanctuaryView bird = birdLists.get(position);
 
-        // thumbnail image
-        thumbNail.setImageUrl(bird.getList_img(), imageLoader);
+
+
 
         //bird Name
         textViewName.setText(bird.getList_name());

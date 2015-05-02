@@ -2,123 +2,67 @@
 <items version="2" >
 
     <item
-        jar="C:\_Android\Zealandia\Zealandia\app\build\intermediates\exploded-aar\com.github.markushi\android-ui\1.2\classes.jar"
+        jar="C:\Users\luke\Documents\Github\ZealandiaMASTER\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="96436aef5f48b09aca1e0183dfcd7782aa580bd6">
-        <dex dex="C:\_Android\Zealandia\Zealandia\app\build\intermediates\pre-dexed\debug\classes-fb29cd3c574bfba66a00b9a686893e24268eaa31.jar" />
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="C:\Users\luke\Documents\Github\ZealandiaMASTER\app\build\intermediates\pre-dexed\debug\classes-f17108690d95f39b97453301cb33422b70c7a002.jar" />
     </item>
     <item
-        jar="C:\_Android\TabsWithSwipeGesture\app\libs\volley.jar"
+        jar="C:\Users\luke\Documents\Github\ZealandiaMASTER\app\libs\volley.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="d4aaa36e04ee71a83444f8367c97a46fda662d2c">
-        <dex dex="C:\_Android\TabsWithSwipeGesture\app\build\intermediates\pre-dexed\debug\volley-e9a8798b9cde36699c6f8c5c5c47aef7f9f8954c.jar" />
+        <dex dex="C:\Users\luke\Documents\Github\ZealandiaMASTER\app\build\intermediates\pre-dexed\debug\volley-e6970290277c3dfb64c36c6c07d4e2d760c7ebb2.jar" />
     </item>
     <item
-        jar="C:\_Android\TabsWithSwipeGesture\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\classes.jar"
+        jar="C:\Users\luke\Documents\Github\ZealandiaMASTER\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="d84409890828e07d344a3b9b1da545dba9897b51">
-        <dex dex="C:\_Android\TabsWithSwipeGesture\app\build\intermediates\pre-dexed\debug\classes-c200b47be035e6358ce16f934238af0c8ecdcf48.jar" />
+        <dex dex="C:\Users\luke\Documents\Github\ZealandiaMASTER\app\build\intermediates\pre-dexed\debug\classes-66793758d4cbfd6a0c9e66194bc465b2f24cccf4.jar" />
     </item>
     <item
-        jar="C:\Users\21104216\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
+        jar="C:\Users\luke\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
-        <dex dex="C:\_Android\TabsWithSwipeGesture\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-7b8193b228c7840a6a31c8c0f54375a08fc9e536.jar" />
+        <dex dex="C:\Users\luke\Documents\Github\ZealandiaMASTER\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-f2a733ad11c5b7184f41804cb3745454f2b8bc6d.jar" />
     </item>
     <item
-        jar="C:\_Android\Zealandia\Zealandia\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\classes.jar"
+        jar="C:\Users\luke\Documents\Github\ZealandiaMASTER\app\build\intermediates\exploded-aar\org.lucasr.dspec\dspec\0.1.1\classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
-        <dex dex="C:\_Android\Zealandia\Zealandia\app\build\intermediates\pre-dexed\debug\classes-429e3f6b9362fd4ae34c871ac23e33ad833677e3.jar" />
+        sha1="dab41681007f3d86a532a5d90295cc6feb9e258b">
+        <dex dex="C:\Users\luke\Documents\Github\ZealandiaMASTER\app\build\intermediates\pre-dexed\debug\classes-2ce412d3c91b7a99ee8f9e918493eb9b0bca00e2.jar" />
     </item>
     <item
-        jar="C:\_Android\TabsWithSwipeGesture\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\libs\internal_impl-22.0.0.jar"
+        jar="C:\Users\luke\Documents\Github\ZealandiaMASTER\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\21.0.3\classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
-        <dex dex="C:\_Android\TabsWithSwipeGesture\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-5f822774a3e51618d0890aa53b57a155ad54fee8.jar" />
+        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
+        <dex dex="C:\Users\luke\Documents\Github\ZealandiaMASTER\app\build\intermediates\pre-dexed\debug\classes-5e174b0b6ec0b4fd1a3614308c3df9927ec275a9.jar" />
     </item>
     <item
-        jar="C:\_Android\TabsWithSwipeGesture\app\build\intermediates\exploded-aar\com.github.markushi\android-ui\1.2\classes.jar"
+        jar="C:\Users\luke\Documents\Github\ZealandiaMASTER\app\build\intermediates\exploded-aar\com.github.markushi\android-ui\1.2\classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="96436aef5f48b09aca1e0183dfcd7782aa580bd6">
-        <dex dex="C:\_Android\TabsWithSwipeGesture\app\build\intermediates\pre-dexed\debug\classes-257fcf9ba064b7a46ba8f84771f65e9afa126625.jar" />
+        <dex dex="C:\Users\luke\Documents\Github\ZealandiaMASTER\app\build\intermediates\pre-dexed\debug\classes-c8d37b48d41d0a7e43e028d895e6d227172b0649.jar" />
     </item>
     <item
-        jar="C:\_Android\Zealandia\Zealandia\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
-        <dex dex="C:\_Android\Zealandia\Zealandia\app\build\intermediates\pre-dexed\debug\classes-2412869029c194628c90131f1534e73ee5664785.jar" />
-    </item>
-    <item
-        jar="C:\_Android\TabsWithSwipeGesture\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\21.0.3\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
-        <dex dex="C:\_Android\TabsWithSwipeGesture\app\build\intermediates\pre-dexed\debug\classes-760108ed4cd35e664ec49e121528ca926e838018.jar" />
-    </item>
-    <item
-        jar="C:\_Android\TabsWithSwipeGesture\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
-        <dex dex="C:\_Android\TabsWithSwipeGesture\app\build\intermediates\pre-dexed\debug\classes-279f03fd7eb49348b9fa1e08f3f025d0c25abe4c.jar" />
-    </item>
-    <item
-        jar="C:\_Android\Zealandia\Zealandia\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\21.0.3\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
-        <dex dex="C:\_Android\Zealandia\Zealandia\app\build\intermediates\pre-dexed\debug\classes-664a10335b94939e0dd96499b5e254c62d317b40.jar" />
-    </item>
-    <item
-        jar="C:\_Android\Zealandia\Zealandia\app\build\intermediates\exploded-aar\it.neokree\MaterialTabs\0.11\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="fef6aa7ea0bb2d6adf10965d0a5bb8e353517bff">
-        <dex dex="C:\_Android\Zealandia\Zealandia\app\build\intermediates\pre-dexed\debug\classes-0a508f4a06d87a682158350497c798bba6200082.jar" />
-    </item>
-    <item
-        jar="C:\_Android\Zealandia\Zealandia\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\libs\internal_impl-22.0.0.jar"
+        jar="C:\Users\luke\Documents\Github\ZealandiaMASTER\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\libs\internal_impl-22.0.0.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
-        <dex dex="C:\_Android\Zealandia\Zealandia\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-d1350451cc2279c85f53656aec3cd49d02e0ac68.jar" />
+        <dex dex="C:\Users\luke\Documents\Github\ZealandiaMASTER\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-ba6a512c6ae779156b29f1851706cee2ca1040c8.jar" />
     </item>
     <item
-        jar="C:\_Android\Zealandia\Zealandia\app\libs\volley.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="d4aaa36e04ee71a83444f8367c97a46fda662d2c">
-        <dex dex="C:\_Android\Zealandia\Zealandia\app\build\intermediates\pre-dexed\debug\volley-0858e2429de974ecf3b0409456a780dcf96d8e57.jar" />
-    </item>
-    <item
-        jar="C:\_Android\TabsWithSwipeGesture\app\build\intermediates\exploded-aar\org.lucasr.dspec\dspec\0.1.1\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="dab41681007f3d86a532a5d90295cc6feb9e258b">
-        <dex dex="C:\_Android\TabsWithSwipeGesture\app\build\intermediates\pre-dexed\debug\classes-b153d7f3e6d4344d21f5e33727abb5f42cf5bb43.jar" />
-    </item>
-    <item
-        jar="C:\_Android\TabsWithSwipeGesture\app\build\intermediates\exploded-aar\it.neokree\MaterialTabs\0.11\classes.jar"
+        jar="C:\Users\luke\Documents\Github\ZealandiaMASTER\app\build\intermediates\exploded-aar\it.neokree\MaterialTabs\0.11\classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="fef6aa7ea0bb2d6adf10965d0a5bb8e353517bff">
-        <dex dex="C:\_Android\TabsWithSwipeGesture\app\build\intermediates\pre-dexed\debug\classes-c9ded526e93ed4c062caf3dbc7bc4844ea3d6353.jar" />
-    </item>
-    <item
-        jar="C:\_Android\Zealandia\Zealandia\app\build\intermediates\exploded-aar\org.lucasr.dspec\dspec\0.1.1\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="dab41681007f3d86a532a5d90295cc6feb9e258b">
-        <dex dex="C:\_Android\Zealandia\Zealandia\app\build\intermediates\pre-dexed\debug\classes-b3d82d92eececa76a39e893b7c70a17384c8093c.jar" />
+        <dex dex="C:\Users\luke\Documents\Github\ZealandiaMASTER\app\build\intermediates\pre-dexed\debug\classes-53cc4e8032bdb7366a8d51f671fc881ff0b589f0.jar" />
     </item>
 
 </items>
