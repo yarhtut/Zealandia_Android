@@ -1,3 +1,8 @@
+/**
+ * Author: Yar HTUT
+ * URL: www.yar.cloudns.org
+ *
+ * */
 package info.Zealandia.adapter;
 
 import android.app.Activity;

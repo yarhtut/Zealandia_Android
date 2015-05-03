@@ -40,17 +40,17 @@ uses-permission#android.permission.INTERNET
 ADDED from AndroidManifest.xml:11:5
 	android:name
 		ADDED from AndroidManifest.xml:11:22
-android:uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 ADDED from AndroidManifest.xml:13:5
 	android:maxSdkVersion
 		ADDED from AndroidManifest.xml:15:9
 	android:name
 		ADDED from AndroidManifest.xml:14:9
-android:uses-permission#android.permission.READ_PHONE_STATE
+uses-permission#android.permission.READ_PHONE_STATE
 ADDED from AndroidManifest.xml:16:5
 	android:name
-		ADDED from AndroidManifest.xml:16:30
-android:uses-permission#android.permission.READ_EXTERNAL_STORAGE
+		ADDED from AndroidManifest.xml:16:22
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
 ADDED from AndroidManifest.xml:17:5
 	android:maxSdkVersion
 		ADDED from AndroidManifest.xml:19:9
@@ -104,7 +104,7 @@ ADDED from AndroidManifest.xml:37:9
 		ADDED from AndroidManifest.xml:39:13
 	android:name
 		ADDED from AndroidManifest.xml:38:13
-activity#info.Zealandia.SubActivity
+activity#info.Zealandia.SchoolActivity
 ADDED from AndroidManifest.xml:41:9
 	android:label
 		ADDED from AndroidManifest.xml:43:13
@@ -128,6 +128,26 @@ ADDED from AndroidManifest.xml:55:9
 		ADDED from AndroidManifest.xml:57:13
 	android:name
 		ADDED from AndroidManifest.xml:56:13
+activity#info.Zealandia.LoginActivity
+ADDED from AndroidManifest.xml:62:9
+	android:label
+		ADDED from AndroidManifest.xml:64:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:65:13
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:66:13
+	android:name
+		ADDED from AndroidManifest.xml:63:13
+activity#info.Zealandia.RegisterActivity
+ADDED from AndroidManifest.xml:69:9
+	android:label
+		ADDED from AndroidManifest.xml:71:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:72:13
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:73:13
+	android:name
+		ADDED from AndroidManifest.xml:70:13
 activity#android.support.v7.widget.TestActivity
 ADDED from com.android.support:recyclerview-v7:21.0.3:18:9
 	android:label

@@ -124,9 +124,9 @@ public class SanctuaryViewActivity extends ActionBarActivity implements Material
     }
     private class ViewPagerAdapter extends FragmentStatePagerAdapter {
 
-        int icons[] = {R.drawable.ic_action_home,
-                R.drawable.ic_action_personal,
-                R.drawable.ic_action_articles};
+        int icons[] = {R.drawable.bird,
+                R.drawable.plant,
+                R.drawable.insect};
 
         FragmentManager fragmentManager;
 

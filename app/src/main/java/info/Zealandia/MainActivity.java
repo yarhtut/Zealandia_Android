@@ -1,10 +1,8 @@
 package info.Zealandia;
 
-import android.app.ActionBar;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -12,19 +10,12 @@ import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
-import android.text.SpannableString;
-import android.text.Spanned;
-import android.text.style.ImageSpan;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import info.Zealandia.tabs.SlidingTabLayout;
-import info.Zealandia.R;
+
 public class MainActivity extends ActionBarActivity {
 
     public Toolbar toolbar;
@@ -82,7 +73,7 @@ public class MainActivity extends ActionBarActivity {
         }
 
         if (id == R.id.navigate) {
-            startActivity(new Intent(this, SubActivity.class));
+            startActivity(new Intent(this, SchoolActivity.class));
             // Toast.makeText(this,"This is my navigation action bar click" + item.getTitle(),Toast.LENGTH_LONG).show();
             return true;
         }
