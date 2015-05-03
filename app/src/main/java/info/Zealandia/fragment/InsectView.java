@@ -179,6 +179,7 @@ public class InsectView extends Fragment  {
 /**
 
  @Override
+
  public void onSortByName() {
  //  mSorter.sortMoviesByName(mListMovies);
  //  mAdapter.notifyDataSetChanged();

@@ -65,8 +65,9 @@ public class ZViewAdapter extends RecyclerView.Adapter<ZViewAdapter.MyZViewHolde
             title = (TextView) itemView.findViewById(R.id.listText);
             icon = (ImageView) itemView.findViewById(R.id.listIcon);
 
-           // icon.setOnClickListener(this);
+           //icon.setOnClickListener(this);
            // title.setOnClickListener(this);
+
 
         }
 
@@ -77,7 +78,7 @@ public class ZViewAdapter extends RecyclerView.Adapter<ZViewAdapter.MyZViewHolde
                     context.startActivity(new Intent(context, SanctuaryViewActivity.class));
                 }
                 if(getPosition() == 1 ){
-                    context.startActivity(new Intent(context, SubActivity.class));
+                    context.startActivity(new Intent(context, SchoolActivity.class));
                 }
                 if(getPosition() == 2 ){
                     context.startActivity(new Intent(context, SanctuaryActivity.class));

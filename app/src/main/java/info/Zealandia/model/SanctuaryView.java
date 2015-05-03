@@ -1,8 +1,11 @@
 package info.Zealandia.model;
-
 /**
+ * Author: Yar HTUT
+ * URL: www.yar.cloudns.org
  * Created by 21104216 on 30/03/2015.
- */
+ *
+ * */
+
 public class SanctuaryView  {
     private String list_id;
     private String list_cat;
