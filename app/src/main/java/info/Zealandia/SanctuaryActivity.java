@@ -27,6 +27,7 @@ import java.util.List;
 
 import info.Zealandia.adapter.BirdAdapter;
 import info.Zealandia.app.AppController;
+import info.Zealandia.app.CacheHelper;
 import info.Zealandia.dbhelper.SQLiteHandler;
 import info.Zealandia.dbhelper.SessionManager;
 import info.Zealandia.model.SanctuaryView;
@@ -69,6 +70,8 @@ public class SanctuaryActivity extends ActionBarActivity {
             logoutUser();
         }
         listView = (ListView) findViewById(R.id.list);
+        birdList = CacheHelper.getInstance().updateTabFromJSON("active");
+
         adapter = new BirdAdapter(this, birdList);
         listView.setAdapter(adapter);
 
@@ -77,49 +80,7 @@ public class SanctuaryActivity extends ActionBarActivity {
         pDialog.setMessage("Loading...");
         pDialog.show();
 
-
-
-        // Creating volley request obj
-        JsonArrayRequest movieReq = new JsonArrayRequest(url,
-                new Response.Listener<JSONArray>() {
-                    @Override
-                    public void onResponse(JSONArray response) {
-                        Log.d(TAG, response.toString());
-                        hidePDialog();
-
-                        // Parsing json
-                        for (int i = 0; i < response.length(); i++) {
-                            try {
-
-                                JSONObject obj = response.getJSONObject(i);
-                                SanctuaryView bird = new SanctuaryView();
-                                bird.setList_name(obj.getString("list_name"));
-                                bird.setList_img(obj.getString("list_img"));
-                                bird.setList_desc(obj.getString("list_desc"));
-                                bird.setList_points(obj.getString("list_points"));
-
-                                birdList.add(bird);
-
-
-                            } catch (JSONException e) {
-                                e.printStackTrace();
-                            }
-                        }
-                        // notifying list adapter about data changes
-                        // so that it renders the list view with updated data
-                        adapter.notifyDataSetChanged();
-                    }
-                }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                VolleyLog.d(TAG, "Error: " + error.getMessage());
-                hidePDialog();
-
-            }
-        });
-
-        // Adding request to request queue
-        AppController.getInstance().addToRequestQueue(movieReq);
+        adapter.notifyDataSetChanged();
 
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

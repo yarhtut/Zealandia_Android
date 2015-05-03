@@ -61,7 +61,7 @@ public class CacheHelper {
                 JSONObject obj = response.getJSONObject(i);
 
 
-                if (obj.getString("list_cat").equals(theCat)) {
+                if (obj.getString("list_cat").equals(theCat) || (theCat.equals("active") && obj.getString("list_active").equals("1"))) {
 
                     SanctuaryView theView = new SanctuaryView();
 
