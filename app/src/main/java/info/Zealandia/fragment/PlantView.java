@@ -25,6 +25,7 @@ import java.util.ArrayList;
 import info.Zealandia.R;
 import info.Zealandia.adapter.AdapterBirdRecyclerList;
 import info.Zealandia.app.AppController;
+import info.Zealandia.app.CacheHelper;
 import info.Zealandia.model.SanctuaryView;
 
 
@@ -106,58 +107,11 @@ public class PlantView extends Fragment  {
         RecyclerBird.setLayoutManager(new LinearLayoutManager(getActivity()));
         adapter = new AdapterBirdRecyclerList(getActivity());
         RecyclerBird.setAdapter(adapter);
+        birdList = CacheHelper.getInstance().updateTabFromJSON("plants");
         adapter.setListBird(birdList);
-
-        // Creating volley request obj
-        final JsonArrayRequest plantReq = new JsonArrayRequest(url,
-                new Response.Listener<JSONArray>() {
-                    @Override
-                    public void onResponse(JSONArray response) {
-                        Log.d(TAG, response.toString());
-                        hidePDialog();
-
-
-
-                        // Parsing json
-                        for (int i = 0; i < response.length(); i++) {
-                            try {
-
-
-                                JSONObject obj = response.getJSONObject(i);
-                                SanctuaryView bird = new SanctuaryView();
-                                bird.setList_name(obj.getString("list_name"));
-                                bird.setList_img(obj.getString("list_img"));
-                                bird.setList_desc(obj.getString("list_desc"));
-                                bird.setList_points(obj.getString("list_points"));
-
-                              //  getData().add(bird);
-                               // Log.d("Inbox JSON: ", response().toString());
-
-                                // adding movie to movies array
-                                //movieList.add(movie);
-                                birdList.add(bird);
-                                Log.d("Bird JSON:", birdList.toString());
-                            } catch (JSONException e) {
-                                e.printStackTrace();
-                            }
-
-                        }
-
-                        // notifying list adapter about data changes
-                        // so that it renders the list view with updated data
-                        adapter.notifyDataSetChanged();
-                    }
-                }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                VolleyLog.d(TAG, "Error: " + error.getMessage());
-                hidePDialog();
-
-            }
-        });
-
+        adapter.notifyDataSetChanged();
         // Adding request to request queue
-        AppController.getInstance().addToRequestQueue(plantReq);
+        //AppController.getInstance().addToRequestQueue(plantReq);
 
 
         return view;

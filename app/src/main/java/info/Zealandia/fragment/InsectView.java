@@ -25,6 +25,7 @@ import java.util.ArrayList;
 import info.Zealandia.R;
 import info.Zealandia.adapter.AdapterInsectRecyclerList;
 import info.Zealandia.app.AppController;
+import info.Zealandia.app.CacheHelper;
 import info.Zealandia.model.SanctuaryView;
 
 
@@ -44,7 +45,7 @@ public class InsectView extends Fragment  {
     private static final String TAG = InsectView.class.getSimpleName();
     private static final String url = "http://yar.cloudns.org/SlimApi/api/list/insects?mobile=1";
     private ProgressDialog pDialog;
-    private ArrayList<SanctuaryView> birdList = new ArrayList<SanctuaryView>();
+    private ArrayList<SanctuaryView> insectList = new ArrayList<SanctuaryView>();
     private AppController myVolleySingleton;
     private RecyclerView RecyclerInsect;
     public AdapterInsectRecyclerList adapter;
@@ -106,57 +107,9 @@ public class InsectView extends Fragment  {
         RecyclerInsect.setLayoutManager(new LinearLayoutManager(getActivity()));
         adapter = new AdapterInsectRecyclerList(getActivity());
         RecyclerInsect.setAdapter(adapter);
-        adapter.setListBird(birdList);
-
-        // Creating volley request obj
-        final JsonArrayRequest insectReq = new JsonArrayRequest(url,
-                new Response.Listener<JSONArray>() {
-                    @Override
-                    public void onResponse(JSONArray response) {
-                        Log.d(TAG, response.toString());
-                        hidePDialog();
-
-                        // Parsing json
-                        for (int i = 0; i < response.length(); i++) {
-                            try {
-
-
-                                JSONObject obj = response.getJSONObject(i);
-                                SanctuaryView bird = new SanctuaryView();
-                                bird.setList_name(obj.getString("list_name"));
-                                bird.setList_img(obj.getString("list_img"));
-                                bird.setList_desc(obj.getString("list_desc"));
-                                bird.setList_points(obj.getString("list_points"));
-
-                              //  getData().add(bird);
-                               // Log.d("Inbox JSON: ", response().toString());
-
-                                // adding movie to movies array
-                                //movieList.add(movie);
-                                birdList.add(bird);
-                                Log.d("Insect JSON loaded:", birdList.toString());
-                            } catch (JSONException e) {
-                                e.printStackTrace();
-                            }
-
-                        }
-
-                        // notifying list adapter about data changes
-                        // so that it renders the list view with updated data
-                        adapter.notifyDataSetChanged();
-                    }
-                }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                VolleyLog.d(TAG, "Error: " + error.getMessage());
-                hidePDialog();
-
-            }
-        });
-
-        // Adding request to request queue
-        AppController.getInstance().addToRequestQueue(insectReq);
-
+        insectList = CacheHelper.getInstance().updateTabFromJSON("insects");
+        adapter.setListBird(insectList);
+        adapter.notifyDataSetChanged();
 
         return view;
     }

@@ -5,6 +5,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import info.Zealandia.R;
+import info.Zealandia.app.CacheHelper;
+
+
 /**
  * Created by 21104216 on 2/04/2015.
  */
@@ -22,7 +25,8 @@ public class SplashScreen extends Activity {
                 // Executed after timer is finished (Opens MainActivity)
                 Intent intent = new Intent(SplashScreen.this, MainActivity.class);
                 startActivity(intent);
-
+                //we will try download a JSON file
+                CacheHelper.getInstance().getAllList();
                 // Kills this Activity
                 finish();
             }
