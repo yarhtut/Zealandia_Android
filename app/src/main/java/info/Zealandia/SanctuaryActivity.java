@@ -2,6 +2,7 @@ package info.Zealandia;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
@@ -27,6 +28,7 @@ import java.util.List;
 
 import info.Zealandia.adapter.BirdAdapter;
 import info.Zealandia.app.AppController;
+import info.Zealandia.cache.ImageCacheManager;
 import info.Zealandia.dbhelper.SQLiteHandler;
 import info.Zealandia.dbhelper.SessionManager;
 import info.Zealandia.model.SanctuaryView;
@@ -47,6 +49,12 @@ public class SanctuaryActivity extends ActionBarActivity {
     private SessionManager session;
 
     public Toolbar toolbar;
+
+
+
+    private static int DISK_IMAGECACHE_SIZE = 1024*1024*10;
+    private static Bitmap.CompressFormat DISK_IMAGECACHE_COMPRESS_FORMAT = Bitmap.CompressFormat.PNG;
+    private static int DISK_IMAGECACHE_QUALITY = 100;  //PNG is lossless so quality is ignored but must be provided
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -117,9 +125,11 @@ public class SanctuaryActivity extends ActionBarActivity {
 
             }
         });
-
+        Log.d(TAG, "Login Response Cache: ");
         // Adding request to request queue
         AppController.getInstance().addToRequestQueue(movieReq);
+
+        createImageCache();
 
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -133,6 +143,17 @@ public class SanctuaryActivity extends ActionBarActivity {
 
     }
 
+    private void createImageCache(){
+        ImageCacheManager.getInstance().init(this,
+                this.getPackageCodePath()
+                , DISK_IMAGECACHE_SIZE
+                , DISK_IMAGECACHE_COMPRESS_FORMAT
+                , DISK_IMAGECACHE_QUALITY
+                , ImageCacheManager.CacheType.MEMORY);
+        Log.d(TAG, "Login Response Cache2: ");
+        Log.v(TAG, "hit these method");
+
+}
     @Override
     public void onDestroy() {
         super.onDestroy();

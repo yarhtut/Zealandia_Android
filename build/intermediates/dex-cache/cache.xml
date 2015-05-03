@@ -72,6 +72,13 @@
         <dex dex="C:\_Android\TabsWithSwipeGesture\app\build\intermediates\pre-dexed\debug\classes-279f03fd7eb49348b9fa1e08f3f025d0c25abe4c.jar" />
     </item>
     <item
+        jar="C:\_Android\Zealandia\Zealandia\app\libs\disklrucache-2.0.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="cdfda74b941164bbf3622347940ba0dd88d2dc91">
+        <dex dex="C:\_Android\Zealandia\Zealandia\app\build\intermediates\pre-dexed\debug\disklrucache-2.0.1-dc5e48f8f88ed60e9562dc3c7a6cf989db9c1c0a.jar" />
+    </item>
+    <item
         jar="C:\_Android\Zealandia\Zealandia\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\21.0.3\classes.jar"
         jumboMode="false"
         revision="21.1.2"
