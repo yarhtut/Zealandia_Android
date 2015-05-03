@@ -41,3 +41,11 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+*.lock
+.idea/*/*/
+
+build/*/*/*/
+gradle/*/*/*/
+app/build/*/*/*/
+.gradle/2.2.1/taskArtifacts/
+
