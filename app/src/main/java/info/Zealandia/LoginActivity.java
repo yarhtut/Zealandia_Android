@@ -141,7 +141,7 @@ public class LoginActivity extends Activity {
 
 								// Launch main activity
 								Intent intent = new Intent(LoginActivity.this,
-										SchoolActivity.class);
+										SanctuaryActivity.class);
 								startActivity(intent);
 								finish();
 							} else {
@@ -184,13 +184,13 @@ public class LoginActivity extends Activity {
 		AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
 	}
 
-	private void showDialog() {
-		if (!pDialog.isShowing())
-			pDialog.show();
-	}
+    private void showDialog() {
+        if (!pDialog.isShowing())
+            pDialog.show();
+    }
 
-	private void hideDialog() {
-		if (pDialog.isShowing())
-			pDialog.dismiss();
-	}
+    private void hideDialog() {
+        if (pDialog.isShowing())
+            pDialog.dismiss();
+    }
 }

@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Collections;
 import java.util.List;
@@ -74,14 +75,17 @@ public class ZViewAdapter extends RecyclerView.Adapter<ZViewAdapter.MyZViewHolde
             @Override
             public void onClick(View v) {
 
+
+
+
                 if(getPosition() == 0 ){
                     context.startActivity(new Intent(context, SanctuaryViewActivity.class));
                 }
                 if(getPosition() == 1 ){
-                    context.startActivity(new Intent(context, SchoolActivity.class));
+                    context.startActivity(new Intent(context, SanctuaryActivity.class));
                 }
                 if(getPosition() == 2 ){
-                    context.startActivity(new Intent(context, SanctuaryActivity.class));
+                    //context.startActivity(new Intent(context, SanctuaryActivity.class));
                 }
                 if(getPosition() == 3 ){
                   //  context.startActivity(new Intent(context, BirdView.class));

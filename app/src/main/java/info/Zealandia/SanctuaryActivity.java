@@ -10,7 +10,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.Response;
@@ -36,8 +38,8 @@ import info.Zealandia.R;
  * Created by 21104216 on 2/04/2015.
  */
 public class SanctuaryActivity extends ActionBarActivity {
-    private static final String TAG = MainActivity.class.getSimpleName();
-    private static final String url = "http://yar.cloudns.org/SlimApi/api/list/all?mobile=1";
+  // private static final String TAG = MainActivity.class.getSimpleName();
+  //  private static final String url = "http://yar.cloudns.org/SlimApi/api/list/all?mobile=1";
     private ProgressDialog pDialog;
     private List<SanctuaryView> birdList = new ArrayList<SanctuaryView>();
     private ListView listView;
@@ -62,7 +64,6 @@ public class SanctuaryActivity extends ActionBarActivity {
 
         // SqLite database handler
         db = new SQLiteHandler(getApplicationContext());
-
         // session manager
         session = new SessionManager(getApplicationContext());
 
@@ -76,23 +77,29 @@ public class SanctuaryActivity extends ActionBarActivity {
         listView.setAdapter(adapter);
 
         pDialog = new ProgressDialog(this);
+
         // Showing progress dialog before making http request
-        pDialog.setMessage("Loading...");
-        pDialog.show();
+        //pDialog.setMessage("Loading...");
+        //  pDialog.show();
 
         adapter.notifyDataSetChanged();
 
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
-                String birdShowPicked = "You selected" +
-                        String.valueOf(adapterView.getItemAtPosition(position));
-                Toast.makeText(SanctuaryActivity.this, birdShowPicked, Toast.LENGTH_LONG).show();
-            }
+
+         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+
+        @Override public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
+
+
+            TextView c = (TextView) view.findViewById(R.id.textViewName);
+            String playerChanged = c.getText().toString();
+
+            Toast.makeText(SanctuaryActivity.this,playerChanged, Toast.LENGTH_SHORT).show();
+        }
         });
 
-    }
+        }
 
     @Override
     public void onDestroy() {

@@ -67,10 +67,8 @@ public class SchoolActivity extends ActionBarActivity {
 
         // SqLite database handler
         db = new SQLiteHandler(getApplicationContext());
-
         // session manager
         session = new SessionManager(getApplicationContext());
-
         if (!session.isLoggedIn()) {
             logoutUser();
         }

@@ -95,7 +95,7 @@ public class AppController extends Application {
 		//create dir if not exists
 		cacheDir.mkdirs();
 
-		//singleton check yar needs to comment code :)
+		//singleton check  needs to comment code :)
 		//if (mRequestQueue == null) {
 		HttpStack stack = new HurlStack();
 		Network network = new BasicNetwork(stack);

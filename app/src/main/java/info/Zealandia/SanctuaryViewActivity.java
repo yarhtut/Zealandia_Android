@@ -26,9 +26,9 @@ public class SanctuaryViewActivity extends ActionBarActivity implements Material
     private MaterialTabHost tabHost;
     private ViewPager viewPager;
     public static final int TAB_BIRD = 0;
-    //int corresponding to our 1st tab corresponding to the Fragment where box office hits are dispalyed
+    //int corresponding to our 1st tab corresponding to the Fragment where  hits are dispalyed
     public static final int TAB_INSECT = 1;
-    //int corresponding to our 2nd tab corresponding to the Fragment where upcoming movies are displayed
+    //int corresponding to our 2nd tab corresponding to the Fragment where upcoming  are displayed
     public static final int TAB_PLANTS = 2;
     //int corresponding to the number of tabs in our Activity
     public static final int TAB_COUNT = 3;
@@ -47,7 +47,8 @@ public class SanctuaryViewActivity extends ActionBarActivity implements Material
         setSupportActionBar(toolbar);
 
        getSupportActionBar().setHomeButtonEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
+       getSupportActionBar().setDisplayShowHomeEnabled(true);
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         tabHost = (MaterialTabHost) findViewById(R.id.materialTabHost);
         viewPager = (ViewPager)findViewById(R.id.viewPager);
@@ -86,7 +87,7 @@ public class SanctuaryViewActivity extends ActionBarActivity implements Material
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_sanctuary, menu);
+        getMenuInflater().inflate(R.menu.menu_sub, menu);
         return true;
     }
 
@@ -101,9 +102,9 @@ public class SanctuaryViewActivity extends ActionBarActivity implements Material
         if (id == R.id.action_settings) {
             return true;
         }
-        // if(id == android.R.id.home){
-       // NavUtils.navigateUpFromSameTask(this);
-        //}
+         if(id == android.R.id.home){
+        NavUtils.navigateUpFromSameTask(this);
+        }
 
         return super.onOptionsItemSelected(item);
     }
@@ -125,8 +126,8 @@ public class SanctuaryViewActivity extends ActionBarActivity implements Material
     private class ViewPagerAdapter extends FragmentStatePagerAdapter {
 
         int icons[] = {R.drawable.bird,
-                R.drawable.plant,
-                R.drawable.insect};
+                R.drawable.insect,
+                R.drawable.plant};
 
         FragmentManager fragmentManager;
 

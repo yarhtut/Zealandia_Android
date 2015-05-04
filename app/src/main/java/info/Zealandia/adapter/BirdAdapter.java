@@ -70,6 +70,8 @@ public class BirdAdapter extends BaseAdapter {
         NetworkImageView thumbNail = (NetworkImageView) convertView
                 .findViewById(R.id.thumbnail);
 
+        TextView textViewId = (TextView) convertView.findViewById(R.id.textViewID);
+
         TextView textViewName = (TextView) convertView.findViewById(R.id.textViewName);
         TextView textViewDesc = (TextView) convertView.findViewById(R.id.textViewDesc);
         TextView textViewPoints = (TextView) convertView.findViewById(R.id.textViewPoints);
@@ -79,6 +81,9 @@ public class BirdAdapter extends BaseAdapter {
 
         // thumbnail image
         thumbNail.setImageUrl(bird.getList_img(), imageLoader);
+
+        //bird Id
+        textViewId.setText(bird.getList_id());
 
         //bird Name
         textViewName.setText(bird.getList_name());

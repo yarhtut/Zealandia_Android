@@ -24,7 +24,7 @@ public class CacheHelper {
     private static CacheHelper _instance;
 
     private static AppController controller;
-    ProgressDialog pDialog;
+    private ProgressDialog pDialog;
 
     private CacheHelper()
     {
@@ -59,12 +59,12 @@ public class CacheHelper {
             try {
 
                 JSONObject obj = response.getJSONObject(i);
-
+                hidePDialog();
 
                 if (obj.getString("list_cat").equals(theCat) || (theCat.equals("active") && obj.getString("list_active").equals("1"))) {
 
                     SanctuaryView theView = new SanctuaryView();
-
+                    theView.setList_id(obj.getString("list_id"));
                     theView.setList_name(obj.getString("list_name"));
                     theView.setList_img(obj.getString("list_img"));
                     theView.setList_desc(obj.getString("list_desc"));
@@ -88,22 +88,28 @@ public class CacheHelper {
      */
     final public void getAllList()
     {
+
+
         String url = "http://yar.cloudns.org/SlimApi/api/list/all?mobile=1";
+
 
         // Creating volley request obj
         final JsonArrayRequest plantReq = new JsonArrayRequest(url,
                 new Response.Listener<JSONArray>() {
                     @Override
+
                     public void onResponse(JSONArray response) {
                         //Log.d(TAG, response.toString());
+
                         AppController.getInstance().writeToFile("alldata",response.toString());
+
                     }
                 }, new Response.ErrorListener() {
 
             @Override
             public void onErrorResponse(VolleyError error) {
                 VolleyLog.d("CacheHelper", "Error: " + error.getMessage());
-
+                hidePDialog();
 
             }
         });
@@ -112,6 +118,11 @@ public class CacheHelper {
         AppController.getInstance().addToRequestQueue(plantReq);
     }
 
-
+    private void hidePDialog() {
+        if (pDialog != null) {
+            pDialog.dismiss();
+            pDialog = null;
+        }
+    }
 
 }
