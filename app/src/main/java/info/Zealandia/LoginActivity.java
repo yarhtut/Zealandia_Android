@@ -45,6 +45,7 @@ public class LoginActivity extends Activity {
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
+
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_login);
 
@@ -63,7 +64,7 @@ public class LoginActivity extends Activity {
 		// Check if user is already logged in or not
 		if (session.isLoggedIn()) {
 			// User is already logged in. Take him to main activity
-			Intent intent = new Intent(LoginActivity.this, SchoolActivity.class);
+			Intent intent = new Intent(LoginActivity.this, SanctuaryActivity.class);
 			startActivity(intent);
 			finish();
 		}

@@ -2,6 +2,7 @@ package info.Zealandia;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
@@ -30,6 +31,7 @@ import java.util.List;
 import info.Zealandia.adapter.BirdAdapter;
 import info.Zealandia.app.AppController;
 import info.Zealandia.app.CacheHelper;
+
 import info.Zealandia.dbhelper.SQLiteHandler;
 import info.Zealandia.dbhelper.SessionManager;
 import info.Zealandia.model.SanctuaryView;
@@ -47,6 +49,7 @@ public class SanctuaryActivity extends ActionBarActivity {
 
 
     private SQLiteHandler db;
+   // private ActivitySQLiteHandler activityDb;
     private SessionManager session;
 
     public Toolbar toolbar;
@@ -64,6 +67,10 @@ public class SanctuaryActivity extends ActionBarActivity {
 
         // SqLite database handler
         db = new SQLiteHandler(getApplicationContext());
+
+        // School Activity Database SqLite database handler
+       // activityDb = new ActivitySQLiteHandler(getApplicationContext());
+
         // session manager
         session = new SessionManager(getApplicationContext());
 
@@ -92,10 +99,15 @@ public class SanctuaryActivity extends ActionBarActivity {
         @Override public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
 
 
-            TextView c = (TextView) view.findViewById(R.id.textViewName);
-            String playerChanged = c.getText().toString();
+            TextView catId = (TextView) view.findViewById(R.id.textViewID);
+            int _catId = Integer.parseInt(catId.getText().toString());
 
-            Toast.makeText(SanctuaryActivity.this,playerChanged, Toast.LENGTH_SHORT).show();
+
+
+            // Add it to the DB and re-draw the ListView
+            db.insectCategoriesId(_catId);
+            String CLICKED = db.getUpdateClicked(_catId);
+           Toast.makeText(SanctuaryActivity.this,CLICKED, Toast.LENGTH_SHORT).show();
         }
         });
 

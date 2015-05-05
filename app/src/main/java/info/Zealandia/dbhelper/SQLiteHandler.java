@@ -8,11 +8,14 @@ package info.Zealandia.dbhelper;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
+import android.database.sqlite.SQLiteConstraintException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
 import java.util.HashMap;
+
+import info.Zealandia.SanctuaryActivity;
 
 public class SQLiteHandler extends SQLiteOpenHelper {
 
@@ -28,12 +31,19 @@ public class SQLiteHandler extends SQLiteOpenHelper {
 	// Login table name
 	private static final String TABLE_LOGIN = "login";
 
+    //Activty table name
+    private static final String TABLE_ACTIVITY = "activity_table";
+
 	// Login Table Columns names
 	private static final String KEY_ID = "id";
 	private static final String KEY_NAME = "name";
 	private static final String KEY_EMAIL = "email";
 	private static final String KEY_UID = "uid";
 	private static final String KEY_CREATED_AT = "created_at";
+
+    //Activity Table Columns names
+
+    private  static final String KEY_CATID = "catId";
 
 	public SQLiteHandler(Context context) {
 		super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -49,7 +59,96 @@ public class SQLiteHandler extends SQLiteOpenHelper {
 		db.execSQL(CREATE_LOGIN_TABLE);
 
 		Log.d(TAG, "Database tables created");
-	}
+
+        //Activities Tables Create
+
+        String CREATE_ACTIVITY_TABLE = "CREATE TABLE " + TABLE_ACTIVITY +
+                "(" + KEY_ID + " INTEGER PRIMARY KEY," + KEY_CATID + " INTEGER UNIQUE," +
+                " CLICKED INTEGER " +
+                ")";
+
+
+        db.execSQL(CREATE_ACTIVITY_TABLE);
+
+
+
+    }
+
+
+    //insect value to the Activity Table.
+    public  void insectCategoriesId (int _catId){
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        //Create row's data
+
+        ContentValues values = new ContentValues();
+        values.put(KEY_CATID, _catId);
+        values.put("CLICKED" , "1");
+
+        try{
+            // Inserting Row
+            int id = (int) db.insertWithOnConflict(TABLE_ACTIVITY, null, values,SQLiteDatabase.CONFLICT_IGNORE);
+
+            if (id == -1){
+                Log.d(TAG, "Database tables Updated");
+                String UPDATE = "UPDATE " + TABLE_ACTIVITY + " SET CLICKED = CLICKED + 1 WHERE " + KEY_CATID + " = " + _catId;
+
+
+                db.execSQL(UPDATE);
+            }
+        }
+
+        catch(SQLiteConstraintException ex){
+            //If already exist get current value
+            //db.execSQL("DROP TABLE IF EXISTS " + TABLE_ACTIVITY);
+            //db.update(TABLE_ACTIVITY, null, values);
+
+
+
+        }
+        db.close(); // Closing database connection
+
+
+        //Log.d(TAG, "New Categories ID inserted into SQLite: " + id);
+    }
+
+    public String getUpdateClicked(int catId) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = null;
+        String _catId = "";
+        try{
+            String query = "SELECT CLICKED FROM "+ TABLE_ACTIVITY + " WHERE "+ KEY_CATID + " = " + catId;
+            cursor = db.rawQuery(query, null);
+
+            if(cursor.getCount() > 0) {
+
+                cursor.moveToFirst();
+                _catId = cursor.getString(cursor.getColumnIndex("CLICKED"));
+            }
+
+
+        }finally {
+
+            //
+        }
+        cursor.close();
+        return _catId;
+    }
+   /**
+            * Getting user login status return true if rows are there in table
+    * */
+    public int getCategoriesID(int id) {
+        String countQuery = "SELECT  * FROM " + TABLE_ACTIVITY + " WHERE id = "+ id ;
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery(countQuery, null);
+        int rowCount = cursor.getCount();
+        db.close();
+        cursor.close();
+
+        // return row count
+        return rowCount;
+    }
+
 
 	// Upgrading database
 	@Override
@@ -85,9 +184,12 @@ public class SQLiteHandler extends SQLiteOpenHelper {
 	 * */
 	public HashMap<String, String> getUserDetails() {
 		HashMap<String, String> user = new HashMap<String, String>();
+
+
 		String selectQuery = "SELECT  * FROM " + TABLE_LOGIN;
 
 		SQLiteDatabase db = this.getReadableDatabase();
+
 		Cursor cursor = db.rawQuery(selectQuery, null);
 		// Move to first row
 		cursor.moveToFirst();
