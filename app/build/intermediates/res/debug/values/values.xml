@@ -305,6 +305,7 @@
     <string name="btn_logout">LOGOUT</string>
     <string name="btn_register">REGISTER</string>
     <string name="btn_sanctuary_button">my json button</string>
+    <string name="cancel">Cancle Dialog</string>
     <string name="drawer_close">Close</string>
     <string name="drawer_open">Open</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -316,6 +317,7 @@
     <string name="name">Fullname</string>
     <string name="new_tab_layout_setting">newTabLayout</string>
     <string name="santuary_text">List view will be show in this area</string>
+    <string name="save">Save the data</string>
     <string name="sub_activities">SubActivity</string>
     <string name="subactivities">SubActivity has been clicked</string>
     <string name="title_activity_bird_fragment_tab">BirdFragmentTab</string>

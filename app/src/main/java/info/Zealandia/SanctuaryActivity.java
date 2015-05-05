@@ -1,6 +1,13 @@
+/**
+ * Created by 21104216 on 2/04/2015.
+ */
+
 package info.Zealandia;
 
+import android.app.AlertDialog;
+import android.app.FragmentManager;
 import android.app.ProgressDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -34,11 +41,10 @@ import info.Zealandia.app.CacheHelper;
 
 import info.Zealandia.dbhelper.SQLiteHandler;
 import info.Zealandia.dbhelper.SessionManager;
+
 import info.Zealandia.model.SanctuaryView;
 import info.Zealandia.R;
-/**
- * Created by 21104216 on 2/04/2015.
- */
+
 public class SanctuaryActivity extends ActionBarActivity {
   // private static final String TAG = MainActivity.class.getSimpleName();
   //  private static final String url = "http://yar.cloudns.org/SlimApi/api/list/all?mobile=1";
@@ -46,6 +52,9 @@ public class SanctuaryActivity extends ActionBarActivity {
     private List<SanctuaryView> birdList = new ArrayList<SanctuaryView>();
     private ListView listView;
     private BirdAdapter adapter;
+    private TextView catId;
+
+    private int _catId;
 
 
     private SQLiteHandler db;
@@ -99,15 +108,38 @@ public class SanctuaryActivity extends ActionBarActivity {
         @Override public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
 
 
-            TextView catId = (TextView) view.findViewById(R.id.textViewID);
-            int _catId = Integer.parseInt(catId.getText().toString());
+             catId = (TextView) view.findViewById(R.id.textViewID);
+             _catId = Integer.parseInt(catId.getText().toString());
+
+
+            //
+            //db.insectCategoriesId(_catId);
+            // String CLICKED = db.getUpdateClicked(_catId);
+            //  StringBuffer buffer=new StringBuffer();
+            // Toast.makeText(SanctuaryActivity.this,CLICKED, Toast.LENGTH_SHORT).show();
+            //showMessage("Student Clicked", CLICKED.toString());
 
 
 
-            // Add it to the DB and re-draw the ListView
-            db.insectCategoriesId(_catId);
-            String CLICKED = db.getUpdateClicked(_catId);
-           Toast.makeText(SanctuaryActivity.this,CLICKED, Toast.LENGTH_SHORT).show();
+            //http://stackoverflow.com/questions/2115758/how-to-display-alert-dialog-in-android
+            new AlertDialog.Builder(SanctuaryActivity.this)
+                    .setTitle("ARE YOU SURE")
+                    .setMessage("Do you want to add this Categories into your lists? " + " " +  _catId )
+                    .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            // continue with delete
+                            db.insectCategoriesId(_catId);
+                            String CLICKED = db.getUpdateClicked(_catId);
+                            showMessage("You have  Clicked", CLICKED.toString() );
+                        }
+                    })
+                    .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            // do nothing
+                        }
+                    })
+                    .setIcon(android.R.drawable.ic_notification_overlay)
+                    .show();
         }
         });
 
@@ -156,6 +188,7 @@ public class SanctuaryActivity extends ActionBarActivity {
      * preferences Clears the user data from sqlite users table
      * */
     private void logoutUser() {
+
         session.setLogin(false);
 
         db.deleteUsers();
@@ -164,5 +197,13 @@ public class SanctuaryActivity extends ActionBarActivity {
         Intent intent = new Intent(SanctuaryActivity.this, LoginActivity.class);
         startActivity(intent);
         finish();
+    }
+    public void showMessage(String title,String message)
+    {
+        AlertDialog.Builder builder=new AlertDialog.Builder(this);
+        builder.setCancelable(true);
+        builder.setTitle(title);
+        builder.setMessage(message);
+        builder.show();
     }
 }
