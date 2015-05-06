@@ -53,6 +53,7 @@ public class SanctuaryActivity extends ActionBarActivity {
     private ListView listView;
     private BirdAdapter adapter;
     private TextView catId;
+    private String CLICKED;
 
     private int _catId;
 
@@ -112,6 +113,7 @@ public class SanctuaryActivity extends ActionBarActivity {
              _catId = Integer.parseInt(catId.getText().toString());
 
 
+
             //
             //db.insectCategoriesId(_catId);
             // String CLICKED = db.getUpdateClicked(_catId);
@@ -123,19 +125,23 @@ public class SanctuaryActivity extends ActionBarActivity {
 
             //http://stackoverflow.com/questions/2115758/how-to-display-alert-dialog-in-android
             new AlertDialog.Builder(SanctuaryActivity.this)
-                    .setTitle("ARE YOU SURE")
+                    .setTitle("ARE YOU SURE?")
                     .setMessage("Do you want to add this Categories into your lists? " + " " +  _catId )
                     .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
-                            // continue with delete
+                            // do something
                             db.insectCategoriesId(_catId);
-                            String CLICKED = db.getUpdateClicked(_catId);
-                            showMessage("You have  Clicked", CLICKED.toString() );
+                            CLICKED = db.getUpdateClicked(_catId);
+
+                            showMessage("You have  Clicked", CLICKED );
+                            showMessage(db.getUserDetailsAsJson(),  db.getResults().toString() );
+
                         }
                     })
                     .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
                             // do nothing
+
                         }
                     })
                     .setIcon(android.R.drawable.ic_notification_overlay)
@@ -177,9 +183,12 @@ public class SanctuaryActivity extends ActionBarActivity {
         if (id == R.id.action_settings) {
             return true;
         }
-      //  if(id == android.R.id.home){
-       //     NavUtils.navigateUpFromSameTask(this);
-       // }
+        if (id == R.id.logout_menu) {
+            logoutUser();
+           // startActivity(new Intent(this, SchoolActivity.class));
+            // Toast.makeText(this,"This is my navigation action bar click" + item.getTitle(),Toast.LENGTH_LONG).show();
+            return true;
+        }
 
         return super.onOptionsItemSelected(item);
     }

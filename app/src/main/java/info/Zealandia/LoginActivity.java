@@ -31,6 +31,7 @@ import info.Zealandia.app.AppController;
 import info.Zealandia.app.AppConfig;
 import info.Zealandia.dbhelper.SessionManager;
 import info.Zealandia.fragment.BirdView;
+import info.Zealandia.model.SanctuaryView;
 
 
 public class LoginActivity extends Activity {
@@ -129,6 +130,8 @@ public class LoginActivity extends Activity {
                             JSONObject jObj = new JSONObject(response);
 							boolean success_login = jObj.getBoolean("success");
 
+
+
                             Toast.makeText(getApplicationContext(),
                                     response, Toast.LENGTH_LONG).show();
 
@@ -139,6 +142,11 @@ public class LoginActivity extends Activity {
 								// user successfully logged in
 								// Create login session
 								session.setLogin(true);
+
+                                //set username and user ID to database
+
+                                //
+
 
 								// Launch main activity
 								Intent intent = new Intent(LoginActivity.this,

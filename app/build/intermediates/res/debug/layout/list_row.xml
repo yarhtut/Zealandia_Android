@@ -25,6 +25,17 @@
         android:textStyle="bold"
         android:textColor="@color/Name"/>
 
+    <!-- Login ID -->
+    <TextView
+        android:id="@+id/textViewLoginID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/title"
+        android:textStyle="bold"
+        android:textColor="@color/Name"/>
+
     <!-- Bird Name -->
     <TextView
         android:id="@+id/textViewName"

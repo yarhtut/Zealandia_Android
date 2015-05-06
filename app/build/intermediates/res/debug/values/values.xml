@@ -313,6 +313,7 @@
     <string name="hint_email">Email</string>
     <string name="hint_name">Fullname</string>
     <string name="hint_password">Password</string>
+    <string name="logout">Log Out</string>
     <string name="map_text_test">Map Activity has opened</string>
     <string name="name">Fullname</string>
     <string name="new_tab_layout_setting">newTabLayout</string>

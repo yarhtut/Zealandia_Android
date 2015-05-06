@@ -5,6 +5,7 @@
  * */
 package info.Zealandia.dbhelper;
 
+import android.app.AlertDialog;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -13,7 +14,15 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 import info.Zealandia.SanctuaryActivity;
 
@@ -23,6 +32,8 @@ public class SQLiteHandler extends SQLiteOpenHelper {
 
 	// All Static variables
 	// Database Version
+
+    SQLiteDatabase db;
 	private static final int DATABASE_VERSION = 1;
 
 	// Database Name
@@ -120,15 +131,15 @@ public class SQLiteHandler extends SQLiteOpenHelper {
             String query = "SELECT CLICKED FROM "+ TABLE_ACTIVITY + " WHERE "+ KEY_CATID + " = " + catId;
             cursor = db.rawQuery(query, null);
 
+
+
             if(cursor.getCount() > 0) {
 
                 cursor.moveToFirst();
                 _catId = cursor.getString(cursor.getColumnIndex("CLICKED"));
             }
 
-
         }finally {
-
             //
         }
         cursor.close();
@@ -185,7 +196,6 @@ public class SQLiteHandler extends SQLiteOpenHelper {
 	public HashMap<String, String> getUserDetails() {
 		HashMap<String, String> user = new HashMap<String, String>();
 
-
 		String selectQuery = "SELECT  * FROM " + TABLE_LOGIN;
 
 		SQLiteDatabase db = this.getReadableDatabase();
@@ -206,7 +216,54 @@ public class SQLiteHandler extends SQLiteOpenHelper {
 
 		return user;
 	}
+    /**
+     * Getting user data from database
+     * */
+    public String getUserDetailsAsJson() {
+        String selectQuery = "SELECT * FROM login";
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery,null);
 
+        JSONArray resultUser     = new JSONArray();
+
+        cursor.moveToFirst();
+        while (cursor.isAfterLast() == false) {
+
+            int totalColumn = cursor.getColumnCount();
+            JSONObject rowObject = new JSONObject();
+
+            for( int i=0 ;  i< totalColumn ; i++ )
+            {
+                if( cursor.getColumnName(i) != null )
+                {
+                    try
+                    {
+                        if( cursor.getString(i) != null )
+                        {
+                            Log.d("TAG_NAME", cursor.getString(i) );
+                            rowObject.put(cursor.getColumnName(i) ,  cursor.getString(i) );
+                        }
+                        else
+                        {
+                            rowObject.put( cursor.getColumnName(i) ,  "" );
+                        }
+                    }
+                    catch( Exception e )
+                    {
+                        Log.d("TAG_NAME", e.getMessage()  );
+                    }
+                }
+            }
+            resultUser.put(rowObject);
+            cursor.moveToNext();
+        }
+        cursor.close();
+        Log.d("TAG_NAME", resultUser.toString());
+        return resultUser.toString();
+
+
+
+}
 	/**
 	 * Getting user login status return true if rows are there in table
 	 * */
@@ -234,4 +291,103 @@ public class SQLiteHandler extends SQLiteOpenHelper {
 		Log.d(TAG, "Deleted all user info from SQLite");
 	}
 
+    /**     *
+     * Compose JSON out of SQLITE records     *
+     */
+    public String composeJSONfromSQLite(){
+
+
+        HashMap<String, String> catList = new HashMap<String, String>();
+        ArrayList theList = new ArrayList();
+
+        String selectQuery = "SELECT * FROM activity_table";
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery,null);
+        cursor.moveToFirst();
+
+        cursor.moveToFirst();
+
+       return null;
+
+    }
+    /**
+     * parse Sqlite to JSON Array Object
+     * */
+    public String getResults()
+    {
+
+        String selectQuery = "SELECT * FROM activity_table";
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery,null);
+
+        JSONArray resultSet     = new JSONArray();
+
+        cursor.moveToFirst();
+        while (cursor.isAfterLast() == false) {
+
+            int totalColumn = cursor.getColumnCount();
+            JSONObject rowObject = new JSONObject();
+
+            for( int i=0 ;  i< totalColumn ; i++ )
+            {
+                if( cursor.getColumnName(i) != null )
+                {
+                    try
+                    {
+                        if( cursor.getString(i) != null )
+                        {
+                            Log.d("TAG_NAME", cursor.getString(i) );
+                            rowObject.put(cursor.getColumnName(i) ,  cursor.getString(i) );
+                        }
+                        else
+                        {
+                            rowObject.put( cursor.getColumnName(i) ,  "" );
+                        }
+                    }
+                    catch( Exception e )
+                    {
+                        Log.d("TAG_NAME", e.getMessage()  );
+                    }
+                }
+            }
+            resultSet.put(rowObject);
+            cursor.moveToNext();
+        }
+        cursor.close();
+        Log.d("TAG_NAME", resultSet.toString());
+        return resultSet.toString();
+    }
+
 }
+
+
+/*
+
+  if (cursor.getCount() == 0) {
+
+        }
+
+
+
+            int totalColumn = cursor.getColumnCount();
+            Log.d(TAG, "totalColumn" +totalColumn);
+            for (int i = 0; i < totalColumn; i++) {
+                while(cursor.moveToNext()) {
+                    Log.d(TAG, "KEY_ID " + cursor.getString(0));
+                    catList.put(KEY_ID, cursor.getString(0));
+                    catList.put(KEY_CATID, cursor.getString(1));
+                    catList.put("CLICKED", cursor.getString(2));
+
+            }
+
+            theList.add(catList);
+        }
+        cursor.close();
+        db.close();
+        Log.d(TAG, "Fetching user from catList: " + catList.toString());
+        Log.d(TAG, "Fetching user from theList: " + theList.toString());
+
+        Gson gson = new GsonBuilder().create();
+        //Use GSON to serialize Array List to JSON
+        return gson.toJson(catList);
+ */

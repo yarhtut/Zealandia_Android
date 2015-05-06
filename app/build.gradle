@@ -28,4 +28,6 @@ dependencies {
     compile 'org.lucasr.dspec:dspec:0.1.1'
 
     compile files('libs/volley.jar')
+    compile files('libs/gson-2.2.4.jar')
+
 }

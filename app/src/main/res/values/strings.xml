@@ -47,5 +47,6 @@
     <string name="username">Username</string>
     <string name="save">Save the data</string>
     <string name="cancel">Cancle Dialog</string>
+    <string name="logout">Log Out</string>
 
 </resources>

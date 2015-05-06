@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.android.volley.toolbox.ImageLoader;
@@ -18,6 +19,7 @@ import com.android.volley.toolbox.NetworkImageView;
 
 import java.util.List;
 
+import info.Zealandia.LoginActivity;
 import info.Zealandia.app.AppController;
 import info.Zealandia.model.SanctuaryView;
 import info.Zealandia.R;
@@ -26,10 +28,11 @@ import info.Zealandia.R;
  * Created by 21104216 on 2/04/2015.
  */
 
-public class BirdAdapter extends BaseAdapter {
+public class BirdAdapter extends BaseAdapter  {
     private Activity activity;
     private LayoutInflater inflater;
     private List<SanctuaryView> birdLists;
+
 
     ImageLoader imageLoader = AppController.getInstance().getImageLoader();
 
@@ -64,6 +67,8 @@ public class BirdAdapter extends BaseAdapter {
         if (convertView == null)
             convertView = inflater.inflate(R.layout.list_row, null);
 
+
+
         if (imageLoader == null)
             imageLoader = AppController.getInstance().getImageLoader();
 
@@ -71,7 +76,7 @@ public class BirdAdapter extends BaseAdapter {
                 .findViewById(R.id.thumbnail);
 
         TextView textViewId = (TextView) convertView.findViewById(R.id.textViewID);
-
+        TextView textViewLogId = (TextView) convertView.findViewById(R.id.textViewLoginID);
         TextView textViewName = (TextView) convertView.findViewById(R.id.textViewName);
         TextView textViewDesc = (TextView) convertView.findViewById(R.id.textViewDesc);
         TextView textViewPoints = (TextView) convertView.findViewById(R.id.textViewPoints);
@@ -84,6 +89,9 @@ public class BirdAdapter extends BaseAdapter {
 
         //bird Id
         textViewId.setText(bird.getList_id());
+
+        //Login Id
+        textViewLogId.setText(bird.getUser_id());
 
         //bird Name
         textViewName.setText(bird.getList_name());

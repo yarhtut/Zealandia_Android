@@ -15,15 +15,18 @@ public class SanctuaryView  {
     private String list_desc;
     private String list_points;
     private String list_active;
+    private String user_id;
 
     public SanctuaryView(){
 
     }
 
+
+
     public SanctuaryView(String list_id, String list_cat,
                          String list_name, String list_img, String list_song,
                          String list_desc, String list_points,
-                         String list_active) {
+                         String list_active,String user_id) {
         this.list_id = list_id;
         this.list_cat = list_cat;
         this.list_name = list_name;
@@ -32,6 +35,7 @@ public class SanctuaryView  {
         this.list_desc = list_desc;
         this.list_points = list_points;
         this.list_active = list_active;
+        this.user_id = user_id;
 
     }
 
@@ -103,7 +107,13 @@ public class SanctuaryView  {
         this.list_active = list_active;
     }
 
+    public String getUser_id() {
+        return user_id;
+    }
 
+    public void setUser_id(String user_id) {
+        this.user_id = user_id;
+    }
 
 
 }

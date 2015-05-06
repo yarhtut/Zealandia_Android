@@ -30,6 +30,13 @@
         <dex dex="C:\_Android\TabsWithSwipeGesture\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-7b8193b228c7840a6a31c8c0f54375a08fc9e536.jar" />
     </item>
     <item
+        jar="C:\_Android\Zealandia\Zealandia\app\libs\gson-2.2.4-sources.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="10ab84ba225b583b10713f57c04270c918ef162b">
+        <dex dex="C:\_Android\Zealandia\Zealandia\app\build\intermediates\pre-dexed\debug\gson-2.2.4-sources-6587434a4008bca71aaa9f9ab0cbd9a77555d9bb.jar" />
+    </item>
+    <item
         jar="C:\_Android\Zealandia\Zealandia\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\classes.jar"
         jumboMode="false"
         revision="21.1.2"
@@ -42,6 +49,13 @@
         revision="21.1.2"
         sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
         <dex dex="C:\_Android\TabsWithSwipeGesture\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-5f822774a3e51618d0890aa53b57a155ad54fee8.jar" />
+    </item>
+    <item
+        jar="C:\_Android\Zealandia\Zealandia\app\libs\gson-2.2.4-javadoc.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="be47c2ee6e9ab0668874e4c6c4933c0637f473d8">
+        <dex dex="C:\_Android\Zealandia\Zealandia\app\build\intermediates\pre-dexed\debug\gson-2.2.4-javadoc-34c65e4e8d3cb948cc9dba9604fd767dbc0217ba.jar" />
     </item>
     <item
         jar="C:\_Android\TabsWithSwipeGesture\app\build\intermediates\exploded-aar\com.github.markushi\android-ui\1.2\classes.jar"
@@ -84,6 +98,13 @@
         revision="21.1.2"
         sha1="fef6aa7ea0bb2d6adf10965d0a5bb8e353517bff">
         <dex dex="C:\_Android\Zealandia\Zealandia\app\build\intermediates\pre-dexed\debug\classes-0a508f4a06d87a682158350497c798bba6200082.jar" />
+    </item>
+    <item
+        jar="C:\_Android\Zealandia\Zealandia\app\libs\gson-2.2.4.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="973e832af433b44c3ed11c426f2f390b29f3f3f8">
+        <dex dex="C:\_Android\Zealandia\Zealandia\app\build\intermediates\pre-dexed\debug\gson-2.2.4-4ce895a915e7c16a98049689a8ef4f63ea42045d.jar" />
     </item>
     <item
         jar="C:\_Android\Zealandia\Zealandia\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\libs\internal_impl-22.0.0.jar"
