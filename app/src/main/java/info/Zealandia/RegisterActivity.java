@@ -138,7 +138,7 @@ public class RegisterActivity extends Activity {
 										.getString("created_at");
 
 								// Inserting row in users table
-								db.addUser(name, email, uid, created_at);
+								db.addUser( email, "");
 
 								// Launch login activity
 								Intent intent = new Intent(

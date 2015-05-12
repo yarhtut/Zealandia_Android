@@ -29,6 +29,7 @@ import java.util.Map;
 
 import info.Zealandia.app.AppController;
 import info.Zealandia.app.AppConfig;
+import info.Zealandia.dbhelper.SQLiteHandler;
 import info.Zealandia.dbhelper.SessionManager;
 import info.Zealandia.fragment.BirdView;
 import info.Zealandia.model.SanctuaryView;
@@ -43,6 +44,8 @@ public class LoginActivity extends Activity {
 	private EditText inputPassword;
 	private ProgressDialog pDialog;
 	private SessionManager session;
+    private SQLiteHandler db;
+
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -61,6 +64,8 @@ public class LoginActivity extends Activity {
 
 		// Session manager
 		session = new SessionManager(getApplicationContext());
+
+
 
 		// Check if user is already logged in or not
 		if (session.isLoggedIn()) {
@@ -123,14 +128,10 @@ public class LoginActivity extends Activity {
 						hideDialog();
 
 						try {
-
-
                             //JSONArray jObj = new JSONArray(response);
 
                             JSONObject jObj = new JSONObject(response);
 							boolean success_login = jObj.getBoolean("success");
-
-
 
                             Toast.makeText(getApplicationContext(),
                                     response, Toast.LENGTH_LONG).show();
@@ -143,7 +144,12 @@ public class LoginActivity extends Activity {
 								// Create login session
 								session.setLogin(true);
 
-                                //set username and user ID to database
+                                //grab the JSON array method
+                                db = new SQLiteHandler(getApplicationContext());
+                                db.addUser(email,password);
+
+                                Log.d(TAG, "Login  username  " + email);
+                                Log.d(TAG, "Login  passwrod  " + password);
 
                                 //
 

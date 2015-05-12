@@ -51,7 +51,7 @@ public class SQLiteHandler extends SQLiteOpenHelper {
 	private static final String KEY_EMAIL = "email";
 	private static final String KEY_UID = "uid";
 	private static final String KEY_CREATED_AT = "created_at";
-
+    private static final String KEY_PASSWORD = "password";
     //Activity Table Columns names
 
     private  static final String KEY_CATID = "catId";
@@ -64,9 +64,9 @@ public class SQLiteHandler extends SQLiteOpenHelper {
 	@Override
 	public void onCreate(SQLiteDatabase db) {
 		String CREATE_LOGIN_TABLE = "CREATE TABLE " + TABLE_LOGIN + "("
-				+ KEY_ID + " INTEGER PRIMARY KEY," + KEY_NAME + " TEXT,"
-				+ KEY_EMAIL + " TEXT UNIQUE," + KEY_UID + " TEXT,"
-				+ KEY_CREATED_AT + " TEXT" + ")";
+				+ KEY_ID + " INTEGER PRIMARY KEY,"
+				+ KEY_EMAIL + " TEXT UNIQUE,"
+                + KEY_PASSWORD + " TEXT)";
 		db.execSQL(CREATE_LOGIN_TABLE);
 
 		Log.d(TAG, "Database tables created");
@@ -94,7 +94,7 @@ public class SQLiteHandler extends SQLiteOpenHelper {
 
         ContentValues values = new ContentValues();
         values.put(KEY_CATID, _catId);
-        values.put("CLICKED" , "1");
+        values.put("CLICKED", "1");
 
         try{
             // Inserting Row
@@ -174,15 +174,14 @@ public class SQLiteHandler extends SQLiteOpenHelper {
 	/**
 	 * Storing user details in database
 	 * */
-	public void addUser(String name, String email, String uid, String created_at) {
+	public void addUser(String email, String password) {
 		SQLiteDatabase db = this.getWritableDatabase();
 
 		ContentValues values = new ContentValues();
-		values.put(KEY_NAME, name); // Name
-		values.put(KEY_EMAIL, email); // Email
-		values.put(KEY_UID, uid); // Id
-		values.put(KEY_CREATED_AT, created_at); // Created At
 
+		values.put(KEY_EMAIL, email); // Email
+		//values.put(KEY_UID, uid);
+        values.put(KEY_PASSWORD, password); //password	// Id
 		// Inserting Row
 		long id = db.insert(TABLE_LOGIN, null, values);
 		db.close(); // Closing database connection
@@ -204,10 +203,9 @@ public class SQLiteHandler extends SQLiteOpenHelper {
 		// Move to first row
 		cursor.moveToFirst();
 		if (cursor.getCount() > 0) {
-			user.put("name", cursor.getString(1));
-			user.put("email", cursor.getString(2));
-			user.put("uid", cursor.getString(3));
-			user.put("created_at", cursor.getString(4));
+			user.put("email", cursor.getString(1));
+			user.put("password", cursor.getString(2));
+
 		}
 		cursor.close();
 		db.close();
@@ -222,7 +220,7 @@ public class SQLiteHandler extends SQLiteOpenHelper {
     public String getUserDetailsAsJson() {
         String selectQuery = "SELECT * FROM login";
         SQLiteDatabase db = this.getReadableDatabase();
-        Cursor cursor = db.rawQuery(selectQuery,null);
+        Cursor cursor = db.rawQuery(selectQuery, null);
 
         JSONArray resultUser     = new JSONArray();
 
@@ -280,17 +278,28 @@ public class SQLiteHandler extends SQLiteOpenHelper {
 	}
 
 	/**
-	 * Re crate database Delete all tables and create them again
-	 * */
-	public void deleteUsers() {
-		SQLiteDatabase db = this.getWritableDatabase();
-		// Delete All Rows
-		db.delete(TABLE_LOGIN, null, null);
-		db.close();
+     * Re crate database Delete all tables and create them again
+     * */
+    public void deleteUsers() {
+        SQLiteDatabase db = this.getWritableDatabase();
+        // Delete All Rows
+        db.delete(TABLE_LOGIN, null, null);
+        db.close();
 
-		Log.d(TAG, "Deleted all user info from SQLite");
-	}
+        Log.d(TAG, "Deleted all user info from SQLite");
+    }
 
+    /**
+     * Re crate database Delete all tables and create them again
+     * */
+    public void deleteActivityTable() {
+        SQLiteDatabase db = this.getWritableDatabase();
+        // Delete All Rows
+        db.delete(TABLE_ACTIVITY, null, null);
+        db.close();
+
+        Log.d(TAG, "Deleted all User click from Activity Table info from SQLite");
+    }
     /**     *
      * Compose JSON out of SQLITE records     *
      */
@@ -361,33 +370,3 @@ public class SQLiteHandler extends SQLiteOpenHelper {
 }
 
 
-/*
-
-  if (cursor.getCount() == 0) {
-
-        }
-
-
-
-            int totalColumn = cursor.getColumnCount();
-            Log.d(TAG, "totalColumn" +totalColumn);
-            for (int i = 0; i < totalColumn; i++) {
-                while(cursor.moveToNext()) {
-                    Log.d(TAG, "KEY_ID " + cursor.getString(0));
-                    catList.put(KEY_ID, cursor.getString(0));
-                    catList.put(KEY_CATID, cursor.getString(1));
-                    catList.put("CLICKED", cursor.getString(2));
-
-            }
-
-            theList.add(catList);
-        }
-        cursor.close();
-        db.close();
-        Log.d(TAG, "Fetching user from catList: " + catList.toString());
-        Log.d(TAG, "Fetching user from theList: " + theList.toString());
-
-        Gson gson = new GsonBuilder().create();
-        //Use GSON to serialize Array List to JSON
-        return gson.toJson(catList);
- */

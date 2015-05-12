@@ -1,7 +1,7 @@
 /**
  * Author: Yar HTUT
  * URL: www.yar.cloudns.org
- *
+ * Created by 21104216 on 2/04/2015.
  * */
 package info.Zealandia.adapter;
 
@@ -24,9 +24,7 @@ import info.Zealandia.app.AppController;
 import info.Zealandia.model.SanctuaryView;
 import info.Zealandia.R;
 
-/**
- * Created by 21104216 on 2/04/2015.
- */
+
 
 public class BirdAdapter extends BaseAdapter  {
     private Activity activity;

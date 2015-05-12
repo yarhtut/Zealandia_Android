@@ -114,7 +114,7 @@ public class BirdView extends Fragment  {
         RecyclerBird.setAdapter(adapter);
         //Set adapter
 
-        birdList = CacheHelper.getInstance().updateTabFromJSON("bird");
+        birdList = CacheHelper.getInstance().updateTabFromJSON("birds");
         adapter.setListBird(birdList);
         adapter.notifyDataSetChanged();
 
@@ -137,46 +137,4 @@ public class BirdView extends Fragment  {
     }
 }
 
-/**
 
- @Override
- public void onSortByName() {
- //  mSorter.sortMoviesByName(mListMovies);
- //  mAdapter.notifyDataSetChanged();
- }
-
- @Override
- public void onSortByDate() {
- //  mSorter.sortMoviesByDate(mListMovies);
- //  mAdapter.notifyDataSetChanged();
- }
-
-
- @Override
- public void onSortByRating() {
- //   mSorter.sortMoviesByRating(mListMovies);
- //  mAdapter.notifyDataSetChanged();
- }
- */
-/**
- * Called when the AsyncTask finishes load the list of movies from the web
- */
-    /*
-    @Override
-    public void onBoxOfficeMoviesLoaded(ArrayList<Movie> listMovies) {
-        L.m("FragmentBoxOffice: onBoxOfficeMoviesLoaded Fragment");
-        //update the Adapter to contain the new movies downloaded from the web
-        if (mSwipeRefreshLayout.isRefreshing()) {
-            mSwipeRefreshLayout.setRefreshing(false);
-        }
-        mAdapter.setMovies(listMovies);
-    }
-
-    @Override
-    public void onRefresh() {
-        L.t(getActivity(), "onRefresh");
-        //load the whole feed again on refresh, dont try this at home :)
-        new TaskLoadMoviesBoxOffice(this).execute();
-
-    }
-}*/
