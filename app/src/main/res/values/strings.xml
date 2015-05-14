@@ -25,9 +25,11 @@
     <string name="title_activity_water_plants_fragment_tab">WaterPlantsFragmentTab</string>
     <string name="new_tab_layout_setting">newTabLayout</string>
     <string-array name="tabs">
-        <item>TAB 1</item>
-        <item>TAB 2</item>
-        <item>TAB 3</item>
+        <item>BIRDS</item>
+        <item>INSECTS</item>
+        <item>PLANTS</item>
+        <item>OTHER</item>
+        <item>OTHERS</item>
     </string-array>
     <string name="title_activity_fragment_tab1">FragmentTab1</string>
 

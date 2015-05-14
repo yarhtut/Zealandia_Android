@@ -76,8 +76,6 @@ public class ZViewAdapter extends RecyclerView.Adapter<ZViewAdapter.MyZViewHolde
             public void onClick(View v) {
 
 
-
-
                 if(getPosition() == 0 ){
                     context.startActivity(new Intent(context, SanctuaryViewActivity.class));
                 }

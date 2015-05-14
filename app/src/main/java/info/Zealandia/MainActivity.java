@@ -14,6 +14,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import info.Zealandia.fragment.InsectView;
+import info.Zealandia.fragment.MammalView;
+import info.Zealandia.fragment.OtherView;
+import info.Zealandia.fragment.PlantView;
 import info.Zealandia.tabs.SlidingTabLayout;
 
 public class MainActivity extends ActionBarActivity {
@@ -21,6 +25,17 @@ public class MainActivity extends ActionBarActivity {
     public Toolbar toolbar;
     private ViewPager mPager;
     private SlidingTabLayout mTabs;
+    public static final int TAB_BIRD = 0;
+    //int corresponding to our 1st tab corresponding to the Fragment where  hits are dispalyed
+    public static final int TAB_INSECT = 1;
+    //int corresponding to our 2nd tab corresponding to the Fragment where upcoming  are displayed
+    public static final int TAB_PLANTS = 2;
+    //int corresponding to the number of tabs in our Activity
+    public static final int TAB_MAMMALS= 3;
+    //int corresponding to the number of tabs in our Activity
+    public static final int TAB_OTHERS = 4;
+    //int corresponding to the number of tabs in our Activity
+    public static final int TAB_COUNT = 5;
 
 
     @Override
@@ -83,18 +98,42 @@ public class MainActivity extends ActionBarActivity {
     }
     class MyPagerAdapter extends FragmentPagerAdapter{
 
-        int icons[]= {R.drawable.ic_action_home,R.drawable.ic_action_articles,R.drawable.ic_action_personal};
-        String [] tabText = getResources().getStringArray(R.array.tabs);
+        int icons[] = {R.drawable.bird,
+                R.drawable.insect,
+                R.drawable.plant};
+
+        FragmentManager fragmentManager;
+
         public MyPagerAdapter(FragmentManager fm) {
             super(fm);
-            tabText=getResources().getStringArray(R.array.tabs);
+            fragmentManager = fm;
         }
 
-        @Override
-        public Fragment getItem(int position) {
-            MyFragment myFragment = MyFragment.getInstance(position);
-            return myFragment;
+        public Fragment getItem(int num) {
+            //  return MyFragment.getInstance(num);
+            Fragment fragment = null;
+            //L.m("getItem called for " + num);
+            switch (num) {
+                case TAB_BIRD:
+                    fragment =  info.Zealandia.fragment.BirdView.newInstance("", "");
+                    break;
+                case TAB_INSECT:
+                    fragment =  InsectView.newInstance("", "");
+                    break;
+                case TAB_PLANTS:
+                    fragment = PlantView.newInstance("", "");
+                    break;
+                case TAB_MAMMALS:
+                    fragment = MammalView.newInstance("", "");
+                    break;
+                case TAB_OTHERS:
+                    fragment = OtherView.newInstance("", "");
+                    break;
+            }
+            return fragment;
+
         }
+
         @Override
         public CharSequence getPageTitle(int position) {
             return getResources().getStringArray(R.array.tabs)[position];
@@ -105,7 +144,7 @@ public class MainActivity extends ActionBarActivity {
         }
         @Override
         public int getCount() {
-            return 3;
+            return  TAB_COUNT;
         }
     }
 

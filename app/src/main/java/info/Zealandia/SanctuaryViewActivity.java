@@ -46,8 +46,10 @@ public class SanctuaryViewActivity extends ActionBarActivity implements Material
 
         setSupportActionBar(toolbar);
 
-       getSupportActionBar().setHomeButtonEnabled(true);
+      // getSupportActionBar().setHomeButtonEnabled(true);
        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setLogo(R.drawable.nextbtn);
+        getSupportActionBar().setLogo(R.drawable.main_logo);
         //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         tabHost = (MaterialTabHost) findViewById(R.id.materialTabHost);
