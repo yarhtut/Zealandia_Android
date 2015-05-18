@@ -46,15 +46,15 @@ public class SQLiteHandler extends SQLiteOpenHelper {
     private static final String TABLE_ACTIVITY = "activity_table";
 
 	// Login Table Columns names
-	private static final String KEY_ID = "id";
+	private static final String KEY_ID = "user_id";
 	private static final String KEY_NAME = "name";
-	private static final String KEY_EMAIL = "email";
+	private static final String KEY_EMAIL = "user_name";
 	private static final String KEY_UID = "uid";
 	private static final String KEY_CREATED_AT = "created_at";
     private static final String KEY_PASSWORD = "password";
     //Activity Table Columns names
 
-    private  static final String KEY_CATID = "catId";
+    private  static final String KEY_CATID = "list_id";
 
 	public SQLiteHandler(Context context) {
 		super(context, DATABASE_NAME, null, DATABASE_VERSION);

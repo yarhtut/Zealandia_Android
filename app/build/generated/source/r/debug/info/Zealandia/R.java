@@ -1445,7 +1445,8 @@ containing a value of this type.
         public static final int nextbtn=0x7f020047;
         public static final int plant=0x7f020048;
         public static final int right_arrow=0x7f020049;
-        public static final int tab_bg=0x7f02004a;
+        public static final int sync=0x7f02004a;
+        public static final int tab_bg=0x7f02004b;
     }
     public static final class id {
         public static final int RecyclerListBird=0x7f09005b;
@@ -1554,6 +1555,7 @@ containing a value of this type.
         public static final int swipeMammalList=0x7f09005f;
         public static final int swipeOtherList=0x7f090065;
         public static final int swipePlantList=0x7f090067;
+        public static final int syncData=0x7f090086;
         public static final int tabContainer=0x7f090057;
         public static final int tabImage=0x7f090058;
         public static final int tabMode=0x7f09000d;

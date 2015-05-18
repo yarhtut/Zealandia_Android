@@ -62,9 +62,6 @@ public class MainActivity extends ActionBarActivity {
         mTabs.setDistributeEvenly(true);
         mTabs.setSelectedIndicatorColors(getResources().getColor(R.color.accent));
         mTabs.setBackgroundColor(getResources().getColor(R.color.primary_tab));
-
-
-        //mTabs.setCustomTabView(R.layout.custom_tab_view,R.id.tabText);
         mTabs.setViewPager(mPager);
 
 

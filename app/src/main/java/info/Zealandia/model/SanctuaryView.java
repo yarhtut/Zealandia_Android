@@ -66,7 +66,7 @@ public class SanctuaryView  {
     }
 
     public String getList_img() {
-        return "http://yar.cloudns.org/SlimApi/template/include/images/" + list_img;
+        return "http://yar.cloudns.org/SlimApi/images/" + list_img;
     }
 
     public void setList_img(String list_img) {

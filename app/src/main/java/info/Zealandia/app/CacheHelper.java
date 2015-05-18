@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import info.Zealandia.model.SanctuaryView;
 
 /**
- * Created by Luke Hardiman on 3/05/2015.
+ * Created by yar Htut on 3/05/2015.
  */
 public class CacheHelper {
     //We are going to use singleton
@@ -50,10 +50,10 @@ public class CacheHelper {
         JSONArray response = null;
         try {
             response = new JSONArray(theResponse);
-        } catch (JSONException e) {
+            Log.d("Error checking 1", response.toString());
+        } catch (Exception e) {
             e.printStackTrace();
         }
-
         // Parsing json
         for (int i = 0; i < response.length(); i++) {
             try {
@@ -74,7 +74,7 @@ public class CacheHelper {
                 }
 
 
-            } catch (JSONException e) {
+            } catch (Exception e) {
                 e.printStackTrace();
             }
 
@@ -82,16 +82,12 @@ public class CacheHelper {
         Log.d("updateTabFromJSON JSON:", theList.toString());
         return theList;
     }
-
     /*
      * Gets all the list from json and stores it, need this is run on SPLASHSCREEN LOAD
      */
     final public void getAllList()
     {
-
-
         String url = "http://yar.cloudns.org/SlimApi/api/list/all?mobile=1";
-
 
         // Creating volley request obj
         final JsonArrayRequest plantReq = new JsonArrayRequest(url,
@@ -100,7 +96,6 @@ public class CacheHelper {
 
                     public void onResponse(JSONArray response) {
                         //Log.d(TAG, response.toString());
-
                         AppController.getInstance().writeToFile("alldata",response.toString());
 
                     }

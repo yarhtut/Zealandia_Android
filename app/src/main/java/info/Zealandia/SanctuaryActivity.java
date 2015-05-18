@@ -81,6 +81,8 @@ public class SanctuaryActivity extends ActionBarActivity {
         setSupportActionBar(toolbar);
 
         getSupportActionBar().setHomeButtonEnabled(true);
+
+
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         // SqLite database handler
@@ -124,14 +126,11 @@ public class SanctuaryActivity extends ActionBarActivity {
 
              catId = (TextView) view.findViewById(R.id.textViewID);
              _catId = Integer.parseInt(catId.getText().toString());
-
             //db.insectCategoriesId(_catId);
             // String CLICKED = db.getUpdateClicked(_catId);
             //  StringBuffer buffer=new StringBuffer();
             // Toast.makeText(SanctuaryActivity.this,CLICKED, Toast.LENGTH_SHORT).show();
             //showMessage("Student Clicked", CLICKED.toString());
-
-
 
             //http://stackoverflow.com/questions/2115758/how-to-display-alert-dialog-in-android
 
@@ -144,13 +143,8 @@ public class SanctuaryActivity extends ActionBarActivity {
                             db.insectCategoriesId(_catId);
                             CLICKED = db.getUpdateClicked(_catId);
 
-                            showMessage("You have  Clicked", CLICKED );
-                            showMessage(db.getUserDetailsAsJson(),  db.getResults().toString() );
-
-                            sentUserData();
-
-                            db.deleteActivityTable();
-                           // checkNetworkStatus();
+                            //showMessage("You have  Clicked", CLICKED);
+                           // showMessage(db.getUserDetailsAsJson(), db.getResults().toString());
 
                         }
                     })
@@ -169,7 +163,7 @@ public class SanctuaryActivity extends ActionBarActivity {
 
     /**
      *
-     * Function to get userid and json clicked data
+     * Function to get userid and json clicked  send User activity data
      */
 
     private  void sentUserData(){
@@ -285,6 +279,14 @@ public class SanctuaryActivity extends ActionBarActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+
+            return true;
+        }
+        if (id == R.id.syncData) {
+            sentUserData();
+
+            db.deleteActivityTable();
+            // Toast.makeText(this,"This is my navigation action bar click" + item.getTitle(),Toast.LENGTH_LONG).show();
             return true;
         }
         if (id == R.id.logout_menu) {

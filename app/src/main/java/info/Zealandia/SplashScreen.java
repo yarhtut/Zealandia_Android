@@ -29,69 +29,69 @@ public class SplashScreen extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
+       CacheHelper.getInstance().getAllList();
+
+        try{
+            ConnectivityManager cm =
+                    (ConnectivityManager)this.getSystemService(Context.CONNECTIVITY_SERVICE);
+
+            NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
+
+            boolean isConnected = activeNetwork != null &&
+                    activeNetwork.isConnectedOrConnecting();
+           //  boolean isWiFi = activeNetwork.getType() == ConnectivityManager.TYPE_WIFI;
+            // boolean isMobile = activeNetwork.getType() == ConnectivityManager.TYPE_MOBILE;
+            if (isConnected == true ) {
+                Log.i("APP_TAG", "Wi-Fi - CONNECTED");
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        // Executed after timer is finished (Opens MainActivity)
+                        Intent intent = new Intent(SplashScreen.this, MainActivity.class);
+                        startActivity(intent);
+                        //we will try download a JSON file
+                        CacheHelper.getInstance().getAllList();
+
+                    }
+
+                }, SPLASH_SCREEN_DELAY);
+            } else {
+                Log.i("APP_TAG", "NO-INTERNET CONNECTION");
+                new AlertDialog.Builder(this)
+                        .setTitle("NO-INTERNET-CONNECTION")
+                        .setMessage("Do you want to connect Wifi or 3G?" )
+                        .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                // do something
+
+                                Intent intent = new Intent(Settings.ACTION_WIFI_SETTINGS);
+                                startActivity(intent);
+
+                                System.exit(0);
 
 
-        ConnectivityManager cm =
-                (ConnectivityManager)this.getSystemService(Context.CONNECTIVITY_SERVICE);
+                            }
+                        })
+                        .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                // do nothing
+                                // Kills this Activity
 
-        NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
-
-        boolean isConnected = activeNetwork != null &&
-                activeNetwork.isConnectedOrConnecting();
-
-       // boolean isWiFi = activeNetwork.getType() == ConnectivityManager.TYPE_WIFI;
-       // boolean isMobile = activeNetwork.getType() == ConnectivityManager.TYPE_MOBILE;
-
-
-        if (isConnected == true) {
-            Log.i("APP_TAG", "Wi-Fi - CONNECTED");
-            new Handler().postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    // Executed after timer is finished (Opens MainActivity)
-                    Intent intent = new Intent(SplashScreen.this, MainActivity.class);
-                    startActivity(intent);
-                    //we will try download a JSON file
-                    CacheHelper.getInstance().getAllList();
-                    finish();
-
-                }
-
-            }, SPLASH_SCREEN_DELAY);
-        } else {
-            Log.i("APP_TAG", "NO-INTERNET CONNECTION");
-            new AlertDialog.Builder(this)
-                    .setTitle("NO-INTERNET-CONNECTION")
-                    .setMessage("Do you want to connect Wifi or 3G?" )
-                    .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int which) {
-                            // do something
-
-                            Intent intent = new Intent(Settings.ACTION_WIFI_SETTINGS);
-                            startActivity(intent);
-
-
-                            finish();
-                            System.exit(0);
-
-
-                        }
-                    })
-                    .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int which) {
-                            // do nothing
-                            // Kills this Activity
-
-                            finish();
-                            System.exit(0);
-                        }
-                    })
-                    .setIcon(android.R.drawable.ic_dialog_info)
-                    .show();
+                                finish();
+                                System.exit(0);
+                            }
+                        })
+                        .setIcon(android.R.drawable.ic_dialog_info)
+                        .show();
 
 
 
+            }
         }
+        catch(Exception e ){
+                    e.printStackTrace();
+        }
+
     }
     public void showMessage(String title)
     {
