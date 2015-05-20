@@ -29,9 +29,10 @@ public class SplashScreen extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
-       CacheHelper.getInstance().getAllList();
+
 
         try{
+
             ConnectivityManager cm =
                     (ConnectivityManager)this.getSystemService(Context.CONNECTIVITY_SERVICE);
 
@@ -39,8 +40,7 @@ public class SplashScreen extends Activity {
 
             boolean isConnected = activeNetwork != null &&
                     activeNetwork.isConnectedOrConnecting();
-           //  boolean isWiFi = activeNetwork.getType() == ConnectivityManager.TYPE_WIFI;
-            // boolean isMobile = activeNetwork.getType() == ConnectivityManager.TYPE_MOBILE;
+
             if (isConnected == true ) {
                 Log.i("APP_TAG", "Wi-Fi - CONNECTED");
                 new Handler().postDelayed(new Runnable() {
@@ -50,7 +50,7 @@ public class SplashScreen extends Activity {
                         Intent intent = new Intent(SplashScreen.this, MainActivity.class);
                         startActivity(intent);
                         //we will try download a JSON file
-                        CacheHelper.getInstance().getAllList();
+                       // CacheHelper.getInstance().getAllList();
 
                     }
 
@@ -64,9 +64,9 @@ public class SplashScreen extends Activity {
                             public void onClick(DialogInterface dialog, int which) {
                                 // do something
 
-                                Intent intent = new Intent(Settings.ACTION_WIFI_SETTINGS);
+                               Intent intent = new Intent(Settings.ACTION_WIFI_SETTINGS);
                                 startActivity(intent);
-
+                                //CacheHelper.getInstance().getAllList();
                                 System.exit(0);
 
 
@@ -91,6 +91,7 @@ public class SplashScreen extends Activity {
         catch(Exception e ){
                     e.printStackTrace();
         }
+        CacheHelper.getInstance().getAllList();
 
     }
     public void showMessage(String title)

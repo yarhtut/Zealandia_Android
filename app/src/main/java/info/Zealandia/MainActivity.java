@@ -14,6 +14,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import info.Zealandia.app.CacheHelper;
 import info.Zealandia.fragment.InsectView;
 import info.Zealandia.fragment.MammalView;
 import info.Zealandia.fragment.OtherView;
@@ -43,7 +44,9 @@ public class MainActivity extends ActionBarActivity {
         // changing action bar color
 
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
+
 
         toolbar = (Toolbar) findViewById(R.id.app_bar);
         setSupportActionBar(toolbar);
@@ -124,7 +127,10 @@ public class MainActivity extends ActionBarActivity {
                     fragment = MammalView.newInstance("", "");
                     break;
                 case TAB_OTHERS:
-                    fragment = OtherView.newInstance("", "");
+                    fragment = info.Zealandia.fragment.OtherView.newInstance("", "");
+                    break;
+                 default:
+
                     break;
             }
             return fragment;

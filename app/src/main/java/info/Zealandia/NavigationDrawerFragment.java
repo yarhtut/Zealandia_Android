@@ -81,8 +81,8 @@ public class NavigationDrawerFragment extends Fragment {
     public List<Information> getData()
     {
         List<Information> data = new ArrayList<>();
-        int[] icons= {R.drawable.nextbtn, R.drawable.nextbtn, R.drawable.nextbtn, R.drawable.nextbtn,};
-        String[] titles = {"Sanctuary View","Login", "Sanctuary","Education"};
+        int[] icons= {android.R.drawable.ic_menu_gallery, android.R.drawable.ic_menu_myplaces};
+        String[] titles = {"Sanctuary View","Login"};
         for(int i=0; i<titles.length && i<icons.length ;i++)
         {
             Information current = new Information();

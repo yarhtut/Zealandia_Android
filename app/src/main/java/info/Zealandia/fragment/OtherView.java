@@ -13,21 +13,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.android.volley.Response;
-import com.android.volley.ServerError;
-import com.android.volley.TimeoutError;
-import com.android.volley.VolleyError;
-import com.android.volley.VolleyLog;
-import com.android.volley.toolbox.JsonArrayRequest;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import java.util.ArrayList;
 
 
-import info.Zealandia.adapter.AdapterBirdRecyclerList;
+import info.Zealandia.adapter.AdapterOthersRecyclerList;
 import info.Zealandia.app.AppController;
 import info.Zealandia.app.CacheHelper;
 import info.Zealandia.model.SanctuaryView;
@@ -44,16 +33,12 @@ public class OtherView extends Fragment  {
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
-
-
-
-    private static final String TAG = BirdView.class.getSimpleName();
-    private static final String url = "http://yar.cloudns.org/SlimApi/api/list/bird?mobile=1";
+    private static final String TAG = OtherView.class.getSimpleName();
     private ProgressDialog pDialog;
-    private ArrayList<SanctuaryView> birdList = new ArrayList<SanctuaryView>();
+    private ArrayList<SanctuaryView> otherView = new ArrayList<SanctuaryView>();
     private AppController myVolleySingleton;
-    private RecyclerView RecyclerBird;
-    public AdapterBirdRecyclerList adapter;
+    private RecyclerView RecyclerOther;
+    public AdapterOthersRecyclerList adapter;
 
 
 
@@ -104,20 +89,16 @@ public class OtherView extends Fragment  {
     public View onCreateView(LayoutInflater inflater, final ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view =  inflater.inflate(R.layout.fragment_other_view, container, false);
+        View view =  inflater.inflate(R.layout.fragment_mammal_view, container, false);
 
-
-        RecyclerBird = (RecyclerView) view.findViewById(R.id.RecyclerListOther);
-
-        RecyclerBird.setLayoutManager(new LinearLayoutManager(getActivity()));
-        adapter = new AdapterBirdRecyclerList(getActivity());
-        RecyclerBird.setAdapter(adapter);
+        RecyclerOther = (RecyclerView) view.findViewById(R.id.RecyclerListOther);
+        RecyclerOther.setLayoutManager(new LinearLayoutManager(getActivity()));
+        adapter = new AdapterOthersRecyclerList(getActivity());
+        RecyclerOther.setAdapter(adapter);
         //Set adapter
-
-        birdList = CacheHelper.getInstance().updateTabFromJSON("others");
-        adapter.setListBird(birdList);
+        otherView = CacheHelper.getInstance().updateTabFromJSON("others");
+        adapter.setListBird(otherView);
         adapter.notifyDataSetChanged();
-
 
         return view;
     }

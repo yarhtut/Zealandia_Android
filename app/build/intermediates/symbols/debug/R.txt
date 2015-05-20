@@ -596,7 +596,7 @@ int layout custom_tab_view 0x7f030022
 int layout fragment_bird_view 0x7f030023
 int layout fragment_games 0x7f030024
 int layout fragment_insect_view 0x7f030025
-int layout fragment_item 0x7f03003e
+int layout fragment_item 0x7f03003f
 int layout fragment_item_grid 0x7f030026
 int layout fragment_item_list 0x7f030027
 int layout fragment_mammal_view 0x7f030028
@@ -617,10 +617,11 @@ int layout outbox_list_item 0x7f030036
 int layout profile 0x7f030037
 int layout recycler_list_bird 0x7f030038
 int layout recycler_list_insect 0x7f030039
-int layout recycler_list_plant 0x7f03003a
-int layout support_simple_spinner_dropdown_item 0x7f03003b
-int layout tab 0x7f03003c
-int layout tab_icon 0x7f03003d
+int layout recycler_list_others 0x7f03003a
+int layout recycler_list_plant 0x7f03003b
+int layout support_simple_spinner_dropdown_item 0x7f03003c
+int layout tab 0x7f03003d
+int layout tab_icon 0x7f03003e
 int menu main 0x7f0d0000
 int menu menu_bird_fragment_tab 0x7f0d0001
 int menu menu_fragment_tab1 0x7f0d0002

@@ -14,6 +14,8 @@ import android.database.sqlite.SQLiteDatabase;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
+import android.os.Handler;
+import android.provider.Settings;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -103,6 +105,7 @@ public class SanctuaryActivity extends ActionBarActivity {
             logoutUser();
         }
         listView = (ListView) findViewById(R.id.list);
+        CacheHelper.getInstance().getAllList();
         birdList = CacheHelper.getInstance().updateTabFromJSON("active");
 
         adapter = new BirdAdapter(this, birdList);
@@ -134,6 +137,7 @@ public class SanctuaryActivity extends ActionBarActivity {
 
             //http://stackoverflow.com/questions/2115758/how-to-display-alert-dialog-in-android
 
+
             new AlertDialog.Builder(SanctuaryActivity.this)
                     .setTitle("ARE YOU SURE?")
                     .setMessage("Do you want to add this Categories into your lists? " + " " +  _catId )
@@ -142,8 +146,11 @@ public class SanctuaryActivity extends ActionBarActivity {
                             // do something
                             db.insectCategoriesId(_catId);
                             CLICKED = db.getUpdateClicked(_catId);
-
-                            //showMessage("You have  Clicked", CLICKED);
+                            // Prompt user to enter credentials
+                            Toast.makeText(getApplicationContext(),
+                                    "You clicked!"+CLICKED, Toast.LENGTH_LONG)
+                                    .show();
+                             //showMessage("You have  Clicked", "" + CLICKED + " times");
                            // showMessage(db.getUserDetailsAsJson(), db.getResults().toString());
 
                         }
@@ -234,15 +241,8 @@ public class SanctuaryActivity extends ActionBarActivity {
         boolean isMobile = activeNetwork.getType() == ConnectivityManager.TYPE_MOBILE;
 
 
-        if (isWiFi) {
+        if (isWiFi == true || isMobile == true) {
 
-                Log.i("APP_TAG", "Wi-Fi - CONNECTED");
-
-
-
-        } else if (isMobile) {
-
-                Log.i("APP_TAG", "Mobile - CONNECTED");
 
         } else {
             Log.i("APP_TAG", "Wi-Fi - DISCONNECTED");
@@ -283,9 +283,81 @@ public class SanctuaryActivity extends ActionBarActivity {
             return true;
         }
         if (id == R.id.syncData) {
-            sentUserData();
 
-            db.deleteActivityTable();
+            try{
+                ConnectivityManager cm =
+                        (ConnectivityManager)this.getSystemService(Context.CONNECTIVITY_SERVICE);
+
+                NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
+
+                boolean isConnected = activeNetwork != null &&
+                        activeNetwork.isConnectedOrConnecting();
+
+                if (isConnected == true ) {
+                    Log.i("APP_TAG", "Wi-Fi - CONNECTED");
+                    new AlertDialog.Builder(this)
+                            .setTitle("Sync To the Database")
+                            .setMessage("Are you finished the whole Activity?" )
+                            .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int which) {
+                                    // do something
+                                    sentUserData();
+                                    db.deleteActivityTable();
+
+                                }
+                            })
+                            .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int which) {
+                                    // do nothing
+                                    // Kill this Activity
+
+                                    finish();
+                                    //System.exit(0);
+                                }
+                            })
+                            .setIcon(android.R.drawable.ic_dialog_info)
+                            .show();
+
+                } else {
+                    Log.i("APP_TAG", "NO-INTERNET CONNECTION");
+                    new AlertDialog.Builder(this)
+                            .setTitle("NO-INTERNET-CONNECTION")
+                            .setMessage("Do you want to connect Wifi or 3G?" )
+                            .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int which) {
+                                    // do something
+
+                                    Intent intent = new Intent(Settings.ACTION_WIFI_SETTINGS);
+                                    startActivity(intent);
+                                    //CacheHelper.getInstance().getAllList();
+                                    System.exit(0);
+
+
+                                }
+                            })
+                            .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int which) {
+                                    // do nothing
+                                    // Kills this Activity
+
+                                    finish();
+                                    System.exit(0);
+                                }
+                            })
+                            .setIcon(android.R.drawable.ic_dialog_info)
+                            .show();
+
+
+
+                }
+            }
+            catch(Exception e ){
+                e.printStackTrace();
+            }
+
+
+
+
             // Toast.makeText(this,"This is my navigation action bar click" + item.getTitle(),Toast.LENGTH_LONG).show();
             return true;
         }

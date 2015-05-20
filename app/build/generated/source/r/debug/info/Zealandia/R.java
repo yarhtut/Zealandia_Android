@@ -1632,7 +1632,7 @@ containing a value of this type.
         public static final int fragment_bird_view=0x7f030023;
         public static final int fragment_games=0x7f030024;
         public static final int fragment_insect_view=0x7f030025;
-        public static final int fragment_item=0x7f03003e;
+        public static final int fragment_item=0x7f03003f;
         public static final int fragment_item_grid=0x7f030026;
         public static final int fragment_item_list=0x7f030027;
         public static final int fragment_mammal_view=0x7f030028;
@@ -1653,10 +1653,11 @@ containing a value of this type.
         public static final int profile=0x7f030037;
         public static final int recycler_list_bird=0x7f030038;
         public static final int recycler_list_insect=0x7f030039;
-        public static final int recycler_list_plant=0x7f03003a;
-        public static final int support_simple_spinner_dropdown_item=0x7f03003b;
-        public static final int tab=0x7f03003c;
-        public static final int tab_icon=0x7f03003d;
+        public static final int recycler_list_others=0x7f03003a;
+        public static final int recycler_list_plant=0x7f03003b;
+        public static final int support_simple_spinner_dropdown_item=0x7f03003c;
+        public static final int tab=0x7f03003d;
+        public static final int tab_icon=0x7f03003e;
     }
     public static final class menu {
         public static final int main=0x7f0d0000;

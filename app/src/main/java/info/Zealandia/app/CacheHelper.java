@@ -51,10 +51,16 @@ public class CacheHelper {
         try {
             response = new JSONArray(theResponse);
             Log.d("Error checking 1", response.toString());
+
+           // if(response.length()== 0){
+              //  getAllList();
+            //}
+
+
+
         } catch (Exception e) {
             e.printStackTrace();
         }
-        // Parsing json
         for (int i = 0; i < response.length(); i++) {
             try {
 

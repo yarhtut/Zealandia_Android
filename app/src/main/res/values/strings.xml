@@ -28,7 +28,7 @@
         <item>BIRDS</item>
         <item>INSECTS</item>
         <item>PLANTS</item>
-        <item>OTHER</item>
+        <item>MAMMALS</item>
         <item>OTHERS</item>
     </string-array>
     <string name="title_activity_fragment_tab1">FragmentTab1</string>
