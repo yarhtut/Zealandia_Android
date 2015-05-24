@@ -2,43 +2,43 @@ package info.Zealandia.fragment;
 
 
 import android.app.ProgressDialog;
-
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import java.util.ArrayList;
 
-
-import info.Zealandia.adapter.AdapterOthersRecyclerList;
+import info.Zealandia.R;
+import info.Zealandia.adapter.AdapterInsectRecyclerList;
 import info.Zealandia.app.AppController;
 import info.Zealandia.app.CacheHelper;
 import info.Zealandia.model.SanctuaryView;
-import info.Zealandia.R;
 
 
 /**
- * A simple {@link android.support.v4.app.Fragment} subclass.
- * Use the {@link BirdView#newInstance} factory method to
- * create an instance of th fragment.
+ * A simple {@link Fragment} subclass.
+ * Use the {@link OtherView#newInstance} factory method to
+ * create an instance of this fragment.
  */
 public class OtherView extends Fragment  {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
+
+
+
     private static final String TAG = OtherView.class.getSimpleName();
+    private static final String url = "http://yar.cloudns.org/SlimApi/api/list/insects?mobile=1";
     private ProgressDialog pDialog;
-    private ArrayList<SanctuaryView> otherView = new ArrayList<SanctuaryView>();
+    private ArrayList<SanctuaryView> insectList = new ArrayList<SanctuaryView>();
     private AppController myVolleySingleton;
-    private RecyclerView RecyclerOther;
-    public AdapterOthersRecyclerList adapter;
+    private RecyclerView RecyclerInsect;
+    public AdapterInsectRecyclerList adapter;
 
 
 
@@ -47,8 +47,7 @@ public class OtherView extends Fragment  {
         return super.toString();
     }
 
-    // private BirdAdapter adapter;
-    //   private BirdAdapter adapter;
+
 
 
     // TODO: Rename and change types of parameters
@@ -71,8 +70,8 @@ public class OtherView extends Fragment  {
      * @return A new instance of fragment FragmentBoxOffice.
      */
     // TODO: Rename and change types and number of parameters
-    public static BirdView newInstance(String param1, String param2) {
-        BirdView fragment = new BirdView();
+    public static OtherView newInstance(String param1, String param2) {
+        OtherView fragment = new OtherView();
         Bundle args = new Bundle();
         //put any extra arguments that you may want to supply to this fragment
         fragment.setArguments(args);
@@ -83,21 +82,20 @@ public class OtherView extends Fragment  {
 
     }
 
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, final ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view =  inflater.inflate(R.layout.fragment_mammal_view, container, false);
+        View view =  inflater.inflate(R.layout.fragment_bird_view, container, false);
 
-        RecyclerOther = (RecyclerView) view.findViewById(R.id.RecyclerListOther);
-        RecyclerOther.setLayoutManager(new LinearLayoutManager(getActivity()));
-        adapter = new AdapterOthersRecyclerList(getActivity());
-        RecyclerOther.setAdapter(adapter);
-        //Set adapter
-        otherView = CacheHelper.getInstance().updateTabFromJSON("others");
-        adapter.setListBird(otherView);
+
+        RecyclerInsect = (RecyclerView) view.findViewById(R.id.RecyclerListBird);
+
+        RecyclerInsect.setLayoutManager(new LinearLayoutManager(getActivity()));
+        adapter = new AdapterInsectRecyclerList(getActivity());
+        RecyclerInsect.setAdapter(adapter);
+        insectList = CacheHelper.getInstance().updateTabFromJSON("others");
+        adapter.setListBird(insectList);
         adapter.notifyDataSetChanged();
 
         return view;
@@ -113,8 +111,7 @@ public class OtherView extends Fragment  {
     @Override
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        //save the movie list to a parcelable prior to rotation or configuration change
-        //  outState.putParcelableArrayList(STATE_MOVIES, mListMovies);
+
     }
 }
 

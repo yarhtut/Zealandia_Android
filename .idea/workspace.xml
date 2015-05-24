@@ -5,110 +5,24 @@
       <config />
     </shared>
   </component>
-  <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="9ac8a104-2780-45bf-8bda-1978ede1d57b" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\build\intermediates\classes\debug\info\Zealandia\MyFragment.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\build\intermediates\classes\debug\info\Zealandia\SanctuaryViewActivity$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\build\intermediates\classes\debug\info\Zealandia\SanctuaryViewActivity$ViewPagerAdapter.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\build\intermediates\classes\debug\info\Zealandia\SanctuaryViewActivity.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\build\intermediates\classes\debug\info\Zealandia\SchoolActivity$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\build\intermediates\classes\debug\info\Zealandia\SchoolActivity$2.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\build\intermediates\classes\debug\info\Zealandia\SchoolActivity$3.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\build\intermediates\classes\debug\info\Zealandia\SchoolActivity.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\build\intermediates\classes\debug\info\Zealandia\adapter\TabPagerAdapter.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\build\intermediates\classes\debug\info\Zealandia\fragment\MyFragment.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\build\intermediates\res\debug\drawable-ldpi-v4\ic_action_home.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\build\intermediates\res\debug\drawable-ldpi-v4\ic_action_important.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\build\intermediates\res\debug\drawable-ldpi-v4\ic_action_personal.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\build\intermediates\res\debug\drawable-mdpi-v4\ic_action_home.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\build\intermediates\res\debug\drawable-mdpi-v4\ic_action_personal.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\build\intermediates\res\debug\drawable-mdpi-v4\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\build\intermediates\res\debug\drawable-xhdpi-v4\ic_action_home.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\build\intermediates\res\debug\drawable-xhdpi-v4\ic_action_important.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\build\intermediates\res\debug\drawable-xhdpi-v4\ic_action_personal.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\build\intermediates\res\debug\drawable-xhdpi-v4\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\build\intermediates\res\debug\drawable-xxhdpi-v4\ic_action_home.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\build\intermediates\res\debug\drawable-xxhdpi-v4\ic_action_important.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\build\intermediates\res\debug\drawable-xxhdpi-v4\ic_action_personal.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\build\intermediates\res\debug\drawable-xxhdpi-v4\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\build\intermediates\res\debug\drawable\next.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\build\intermediates\res\debug\layout\activity_bird_fragment_tab.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\build\intermediates\res\debug\layout\activity_water_plants_fragment_tab.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\build\intermediates\res\debug\layout\custom_tab_view.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\build\intermediates\res\debug\layout\fragment_top_rated.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\build\intermediates\res\debug\layout\inbox_list.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\build\intermediates\res\debug\layout\inbox_list_item.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\build\intermediates\res\debug\layout\outbox_list.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\build\intermediates\res\debug\layout\outbox_list_item.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\build\intermediates\res\debug\layout\profile.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\libs\google-gson-2.2.4-release\google-gson-2.2.4\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\libs\google-gson-2.2.4-release\google-gson-2.2.4\README" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\libs\google-gson-2.2.4-release\google-gson-2.2.4\gson-2.2.4-javadoc.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\libs\google-gson-2.2.4-release\google-gson-2.2.4\gson-2.2.4-sources.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\libs\google-gson-2.2.4-release\google-gson-2.2.4\gson-2.2.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\src\main\java\info\Zealandia\MyFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\src\main\java\info\Zealandia\SanctuaryViewActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\src\main\java\info\Zealandia\SchoolActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\src\main\java\info\Zealandia\adapter\TabPagerAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\src\main\java\info\Zealandia\app\JSONParseHelper.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\src\main\java\info\Zealandia\fragment\MyFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\src\main\res\drawable-ldpi\ic_action_home.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\src\main\res\drawable-ldpi\ic_action_important.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\src\main\res\drawable-ldpi\ic_action_personal.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\src\main\res\drawable-mdpi\ic_action_home.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\src\main\res\drawable-mdpi\ic_action_personal.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\src\main\res\drawable-mdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\src\main\res\drawable-xhdpi\ic_action_home.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\src\main\res\drawable-xhdpi\ic_action_important.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\src\main\res\drawable-xhdpi\ic_action_personal.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\src\main\res\drawable-xhdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\src\main\res\drawable-xxhdpi\ic_action_home.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\src\main\res\drawable-xxhdpi\ic_action_important.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\src\main\res\drawable-xxhdpi\ic_action_personal.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\src\main\res\drawable-xxhdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\src\main\res\drawable\next.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\src\main\res\layout\activity_bird_fragment_tab.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\src\main\res\layout\activity_water_plants_fragment_tab.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\src\main\res\layout\custom_tab_view.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\src\main\res\layout\fragment_top_rated.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\src\main\res\layout\inbox_list.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\src\main\res\layout\inbox_list_item.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\src\main\res\layout\outbox_list.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\src\main\res\layout\outbox_list_item.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\src\main\res\layout\profile.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/adapter/AdapterBirdRecyclerList$ViewHolderRecyclerBird.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/adapter/AdapterBirdRecyclerList$ViewHolderRecyclerBird.class" />
+      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\build\intermediates\res\debug\layout\fragment_games.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\src\main\java\info\Zealandia\adapter\AdapterOthersRecyclerList.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\_Android\Zealandia\Zealandia\app\src\main\res\layout\fragment_games.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/adapter/AdapterBirdRecyclerList.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/adapter/AdapterBirdRecyclerList.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/adapter/AdapterInsectRecyclerList$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/adapter/AdapterInsectRecyclerList$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/adapter/AdapterInsectRecyclerList$ViewHolderRecyclerBird.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/adapter/AdapterInsectRecyclerList$ViewHolderRecyclerBird.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/adapter/AdapterInsectRecyclerList.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/adapter/AdapterInsectRecyclerList.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/adapter/AdapterPlantRecyclerList$ViewHolderRecyclerBird.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/adapter/AdapterPlantRecyclerList$ViewHolderRecyclerBird.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/adapter/AdapterPlantRecyclerList.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/adapter/AdapterPlantRecyclerList.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/app/AppConfig.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/app/AppConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/app/AppController.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/app/AppController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/adapter/BirdAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/adapter/BirdAdapter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/fragment/BirdView.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/fragment/BirdView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/Information.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/Information.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/fragment/InsectView.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/fragment/InsectView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/LoginActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/LoginActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/LoginActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/LoginActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/LoginActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/LoginActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/LoginActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/LoginActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/LoginActivity$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/LoginActivity$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/LoginActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/LoginActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/util/LruBitmapCache.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/util/LruBitmapCache.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/MainActivity$MyPagerAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/MainActivity$MyPagerAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/MainActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/MainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/NavigationDrawerFragment$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/NavigationDrawerFragment$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/NavigationDrawerFragment$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/NavigationDrawerFragment$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/NavigationDrawerFragment.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/NavigationDrawerFragment.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/fragment/PlantView.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/fragment/PlantView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/it/neokree/materialtabs/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/it/neokree/materialtabs/R$drawable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/it/neokree/materialtabs/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/it/neokree/materialtabs/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/R$integer.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/R$integer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$layout.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/R$layout.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/it/neokree/materialtabs/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/it/neokree/materialtabs/R$layout.class" />
@@ -117,23 +31,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/R$style.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/R$styleable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/R$styleable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/R.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/R.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/RegisterActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/RegisterActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/RegisterActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/RegisterActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/RegisterActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/RegisterActivity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/RegisterActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/RegisterActivity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/RegisterActivity$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/RegisterActivity$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/RegisterActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/RegisterActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/SanctuaryActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/SanctuaryActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/SanctuaryActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/SanctuaryActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/model/SanctuaryView.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/model/SanctuaryView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/tabs/SlidingTabLayout$InternalViewPagerListener.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/tabs/SlidingTabLayout$InternalViewPagerListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/tabs/SlidingTabLayout$TabClickListener.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/tabs/SlidingTabLayout$TabClickListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/tabs/SlidingTabLayout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/tabs/SlidingTabLayout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/tabs/SlidingTabStrip$SimpleTabColorizer.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/tabs/SlidingTabStrip$SimpleTabColorizer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/tabs/SlidingTabStrip.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/tabs/SlidingTabStrip.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/SplashScreen$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/SplashScreen$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/SplashScreen.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/SplashScreen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/ZViewAdapter$MyZViewHolder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/ZViewAdapter$MyZViewHolder.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/ZViewAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/info/Zealandia/ZViewAdapter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" />
@@ -147,40 +44,26 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/classes.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/gradle_project_sync_data.bin" afterPath="$PROJECT_DIR$/build/intermediates/gradle_project_sync_data.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-d1350451cc2279c85f53656aec3cd49d02e0ac68.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-d1350451cc2279c85f53656aec3cd49d02e0ac68.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/resources/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/resources/resources-debug-androidTest.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/resources/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/resources/resources-debug.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/volley-0858e2429de974ecf3b0409456a780dcf96d8e57.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/volley-0858e2429de974ecf3b0409456a780dcf96d8e57.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/info/Zealandia/app/AppConfig.java" afterPath="$PROJECT_DIR$/app/src/main/java/info/Zealandia/app/AppConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/info/Zealandia/app/AppController.java" afterPath="$PROJECT_DIR$/app/src/main/java/info/Zealandia/app/AppController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/info/Zealandia/adapter/AdapterInsectRecyclerList.java" afterPath="$PROJECT_DIR$/app/src/main/java/info/Zealandia/adapter/AdapterInsectRecyclerList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/info/Zealandia/adapter/AdapterPlantRecyclerList.java" afterPath="$PROJECT_DIR$/app/src/main/java/info/Zealandia/adapter/AdapterPlantRecyclerList.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/info/Zealandia/fragment/BirdView.java" afterPath="$PROJECT_DIR$/app/src/main/java/info/Zealandia/fragment/BirdView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/info/Zealandia/app/CacheHelper.java" afterPath="$PROJECT_DIR$/app/src/main/java/info/Zealandia/app/CacheHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/info/Zealandia/Information.java" afterPath="$PROJECT_DIR$/app/src/main/java/info/Zealandia/Information.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/info/Zealandia/fragment/InsectView.java" afterPath="$PROJECT_DIR$/app/src/main/java/info/Zealandia/fragment/InsectView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/info/Zealandia/LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/info/Zealandia/LoginActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/info/Zealandia/util/LruBitmapCache.java" afterPath="$PROJECT_DIR$/app/src/main/java/info/Zealandia/util/LruBitmapCache.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/info/Zealandia/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/info/Zealandia/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/info/Zealandia/NavigationDrawerFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/info/Zealandia/NavigationDrawerFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/info/Zealandia/fragment/MammalView.java" afterPath="$PROJECT_DIR$/app/src/main/java/info/Zealandia/fragment/MammalView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/info/Zealandia/fragment/OtherView.java" afterPath="$PROJECT_DIR$/app/src/main/java/info/Zealandia/fragment/OtherView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/info/Zealandia/fragment/PlantView.java" afterPath="$PROJECT_DIR$/app/src/main/java/info/Zealandia/fragment/PlantView.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/info/Zealandia/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/info/Zealandia/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/it/neokree/materialtabs/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/it/neokree/materialtabs/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/info/Zealandia/RegisterActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/info/Zealandia/RegisterActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/info/Zealandia/SanctuaryActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/info/Zealandia/SanctuaryActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/info/Zealandia/model/SanctuaryView.java" afterPath="$PROJECT_DIR$/app/src/main/java/info/Zealandia/model/SanctuaryView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/info/Zealandia/tabs/SlidingTabLayout.java" afterPath="$PROJECT_DIR$/app/src/main/java/info/Zealandia/tabs/SlidingTabLayout.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/info/Zealandia/tabs/SlidingTabStrip.java" afterPath="$PROJECT_DIR$/app/src/main/java/info/Zealandia/tabs/SlidingTabStrip.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/info/Zealandia/SplashScreen.java" afterPath="$PROJECT_DIR$/app/src/main/java/info/Zealandia/SplashScreen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/info/Zealandia/ZViewAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/info/Zealandia/ZViewAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/activity_login.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/layout/activity_login.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/menu/menu_main.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/menu/menu_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_other_view.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_other_view.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeResources/debug/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeResources/debug/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Zealandia.iws" />
@@ -201,113 +84,47 @@
     <favorites_list name="Zealandia" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.46143252">
+    <splitter split-orientation="horizontal" split-proportion="0.37576583">
       <split-first>
         <leaf>
-          <file leaf-file-name="activity_sanctuary.xml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_sanctuary.xml">
-              <provider editor-type-id="android-designer">
-                <state />
-              </provider>
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="activity_register.xml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml">
-              <provider editor-type-id="android-designer">
-                <state />
-              </provider>
+          <file leaf-file-name="CacheHelper.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/src/main/java/info/Zealandia/app/CacheHelper.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="activity_map.xml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_map.xml">
-              <provider editor-type-id="android-designer">
-                <state />
-              </provider>
+          <file leaf-file-name="OtherView.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/src/main/java/info/Zealandia/fragment/OtherView.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <caret line="103" column="32" selection-start-line="103" selection-start-column="32" selection-end-line="103" selection-end-column="32" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="activity_main_appbar.xml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main_appbar.xml">
-              <provider editor-type-id="android-designer">
-                <state />
-              </provider>
+          <file leaf-file-name="BirdView.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/src/main/java/info/Zealandia/fragment/BirdView.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <caret line="125" column="0" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-              <provider editor-type-id="android-designer">
-                <state />
-              </provider>
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="AppConfig.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/src/main/java/info/Zealandia/app/AppConfig.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.10044313">
-                  <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="menu_main.xml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="activity_login.xml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
-              <provider editor-type-id="android-designer">
-                <state />
-              </provider>
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.0">
-                  <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/src/main/java/info/Zealandia/MainActivity.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="98" column="14" selection-start-line="98" selection-start-column="14" selection-end-line="98" selection-end-column="14" />
-                  <folding />
+                <state vertical-scroll-proportion="4.070833">
+                  <caret line="137" column="40" selection-start-line="137" selection-start-column="40" selection-end-line="137" selection-end-column="40" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -336,21 +153,53 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="AdapterOthersRecyclerList.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/src/main/java/info/Zealandia/adapter/AdapterOthersRecyclerList.java">
+          <file leaf-file-name="AdapterPlantRecyclerList.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/src/main/java/info/Zealandia/adapter/AdapterPlantRecyclerList.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+                  <caret line="46" column="67" selection-start-line="46" selection-start-column="67" selection-end-line="46" selection-end-column="67" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="BirdAdapter.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="PlantView.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/src/main/java/info/Zealandia/fragment/PlantView.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="129" column="0" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="BirdAdapter.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/src/main/java/info/Zealandia/adapter/BirdAdapter.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.34711966">
-                  <caret line="59" column="52" selection-start-line="59" selection-start-column="52" selection-end-line="59" selection-end-column="52" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="78" column="40" selection-start-line="78" selection-start-column="40" selection-end-line="78" selection-end-column="40" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="MammalView.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/src/main/java/info/Zealandia/fragment/MammalView.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.74375">
+                  <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="InsectView.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/src/main/java/info/Zealandia/fragment/InsectView.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="106" column="39" selection-start-line="0" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -1632,19 +1481,26 @@
         <option value="$PROJECT_DIR$/app/src/main/java/info/Zealandia/tabs/SlidingTabLayout.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/info/Zealandia/model/SanctuaryView.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/info/Zealandia/fragment/MyFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/info/Zealandia/fragment/BirdView.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/info/Zealandia/fragment/InsectView.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/info/Zealandia/app/AppConfig.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/info/Zealandia/app/AppController.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/info/Zealandia/app/CacheHelper.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/info/Zealandia/app/JSONParseHelper.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/info/Zealandia/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/info/Zealandia/RegisterActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_top_rated.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/custom_tab_view.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/info/Zealandia/SanctuaryActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/info/Zealandia/adapter/AdapterInsectRecyclerList.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/info/Zealandia/adapter/AdapterPlantRecyclerList.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/info/Zealandia/adapter/AdapterOthersRecyclerList.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_other_view.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/info/Zealandia/fragment/InsectView.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/info/Zealandia/fragment/BirdView.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/info/Zealandia/fragment/PlantView.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/info/Zealandia/fragment/OtherView.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/info/Zealandia/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/info/Zealandia/fragment/MammalView.java" />
       </list>
     </option>
   </component>
@@ -1775,6 +1631,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Zealandia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Zealandia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2076,6 +1962,11 @@
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="015d483bf133f80d" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="1" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="info.Zealandia.fragment" />
+    </key>
+  </component>
   <component name="RunManager" selected="Android Application.app">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
@@ -2278,24 +2169,24 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-188" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21579532" sideWeight="0.5522388" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4349277" sideWeight="0.21108742" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.76974416" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21579532" sideWeight="0.4477612" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4349277" sideWeight="0.7889126" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2260128" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21695095" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -2328,90 +2219,18 @@
           <line>2</line>
           <properties />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/info/Zealandia/fragment/MammalView.java</url>
+          <line>3</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/info/Zealandia/fragment/PlantView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/info/Zealandia/app/CacheHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/info/Zealandia/adapter/AdapterPlantRecyclerList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/info/Zealandia/adapter/AdapterBirdRecyclerList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/info/Zealandia/RegisterActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="84" column="56" selection-start-line="84" selection-start-column="56" selection-end-line="84" selection-end-column="56" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/bird.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/custom_list_view.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/list_row_bg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/main_logo.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/sync.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/list_row_bg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/list_row_bg_hover.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2497,40 +2316,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_other_view.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.827586">
-          <caret line="27" column="34" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_navigation_drawer.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_my.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_mammal_view.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
@@ -2552,29 +2338,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_item_grid.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_insect_view.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_games.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
@@ -2640,28 +2404,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_sanctuary.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_map.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -2708,26 +2450,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/info/Zealandia/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="98" column="14" selection-start-line="98" selection-start-column="14" selection-end-line="98" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/info/Zealandia/adapter/AdapterOthersRecyclerList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/main.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47710487">
+          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
           <folding />
         </state>
       </provider>
@@ -2743,10 +2477,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_sanctuary.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_item_grid.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_navigation_drawer.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2762,27 +2532,169 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/info/Zealandia/app/AppController.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/info/Zealandia/adapter/AdapterInsectRecyclerList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7533235">
-          <caret line="136" column="37" selection-start-line="136" selection-start-column="37" selection-end-line="136" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="73" column="35" selection-start-line="73" selection-start-column="35" selection-end-line="73" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/info/Zealandia/app/AppConfig.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/recycler_list_others.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10044313">
-          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_plant_view.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.206897">
+          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/info/Zealandia/adapter/AdapterPlantRecyclerList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="67" selection-start-line="46" selection-start-column="67" selection-end-line="46" selection-end-column="67" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/info/Zealandia/adapter/BirdAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34711966">
-          <caret line="59" column="52" selection-start-line="59" selection-start-column="52" selection-end-line="59" selection-end-column="52" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="78" column="40" selection-start-line="78" selection-start-column="40" selection-end-line="78" selection-end-column="40" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/info/Zealandia/app/AppConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0937931">
+          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/info/Zealandia/app/AppController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.75448275">
+          <caret line="136" column="37" selection-start-line="136" selection-start-column="37" selection-end-line="136" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/info/Zealandia/fragment/PlantView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="129" column="0" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/recycler_list_insect.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.1978022">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/info/Zealandia/fragment/BirdView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="125" column="0" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/recycler_list_plant.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.864011">
+          <caret line="37" column="44" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_other_view.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2802198">
+          <caret line="12" column="59" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_mammal_view.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/info/Zealandia/app/CacheHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/info/Zealandia/fragment/InsectView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="106" column="39" selection-start-line="0" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/info/Zealandia/fragment/OtherView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="103" column="32" selection-start-line="103" selection-start-column="32" selection-end-line="103" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/info/Zealandia/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.070833">
+          <caret line="137" column="40" selection-start-line="137" selection-start-column="40" selection-end-line="137" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/info/Zealandia/fragment/MammalView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.74375">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

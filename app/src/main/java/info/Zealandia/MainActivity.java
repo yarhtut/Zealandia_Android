@@ -4,7 +4,6 @@ package info.Zealandia;
  * Author: Yar HTUT - 21104216
  * URL: www.yar.cloudns.org
  * */
-import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -21,6 +20,7 @@ import android.widget.Toast;
 
 import info.Zealandia.fragment.InsectView;
 import info.Zealandia.fragment.MammalView;
+import info.Zealandia.fragment.OtherView;
 import info.Zealandia.fragment.PlantView;
 import info.Zealandia.tabs.SlidingTabLayout;
 
@@ -135,7 +135,7 @@ public class MainActivity extends ActionBarActivity {
                     fragment = MammalView.newInstance("", "");
                     break;
                 case TAB_OTHERS:
-                    fragment = info.Zealandia.fragment.OtherView.newInstance("", "");
+                    fragment = OtherView.newInstance("", "");
                     break;
                  default:
 

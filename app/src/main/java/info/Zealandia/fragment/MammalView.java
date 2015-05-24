@@ -19,11 +19,7 @@ import info.Zealandia.app.CacheHelper;
 import info.Zealandia.model.SanctuaryView;
 
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link MammalView#newInstance} factory method to
- * create an instance of th fragment.
- */
+
 public class MammalView extends Fragment  {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -99,7 +95,7 @@ public class MammalView extends Fragment  {
         RecyclerMammal.setAdapter(adapter);
         //Set adapter
 
-        mammalView = CacheHelper.getInstance().updateTabFromJSON("other");
+        mammalView = CacheHelper.getInstance().updateTabFromJSON("mammals");
         adapter.setListBird(mammalView);
         adapter.notifyDataSetChanged();
 

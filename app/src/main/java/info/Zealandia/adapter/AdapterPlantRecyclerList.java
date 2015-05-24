@@ -92,10 +92,10 @@ public class AdapterPlantRecyclerList extends RecyclerView.Adapter<AdapterPlantR
             private TextView  list_points;
         public ViewHolderRecyclerBird(View itemView){
             super (itemView);
-            list_img = (ImageView) itemView.findViewById(R.id.thumbnail);
-            list_name = (TextView) itemView.findViewById(R.id.textViewName);
-            list_desc = (TextView) itemView.findViewById(R.id.textViewDesc);
-            list_points = (TextView) itemView.findViewById(R.id.textViewPoints);
+            list_img = (ImageView) itemView.findViewById(R.id.thumbnailPlant);
+            list_name = (TextView) itemView.findViewById(R.id.textViewNamePlant);
+            list_desc = (TextView) itemView.findViewById(R.id.textViewDescPlant);
+            list_points = (TextView) itemView.findViewById(R.id.textViewPointsPlant);
 
 
 

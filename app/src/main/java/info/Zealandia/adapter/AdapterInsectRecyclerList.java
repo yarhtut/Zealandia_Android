@@ -58,10 +58,8 @@ public class AdapterInsectRecyclerList extends RecyclerView.Adapter<AdapterInsec
         holder.list_desc.setText(currentInsects.getList_desc());
         holder.list_points.setText(currentInsects.getList_points());
 
-
        String urlThumnail = currentInsects.getList_img();
-      // mImageLoader = AppController.getInstance().getImageLoader();
-      //  holder.birdThumbnail.setImageBitmap();
+
 
         if(urlThumnail !=  null){
             mImageLoader.get(urlThumnail, new ImageLoader.ImageListener(){

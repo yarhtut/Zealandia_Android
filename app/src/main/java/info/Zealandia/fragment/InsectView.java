@@ -121,8 +121,7 @@ public class InsectView extends Fragment  {
     @Override
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        //save the movie list to a parcelable prior to rotation or configuration change
-        //  outState.putParcelableArrayList(STATE_MOVIES, mListMovies);
+
     }
 }
 
