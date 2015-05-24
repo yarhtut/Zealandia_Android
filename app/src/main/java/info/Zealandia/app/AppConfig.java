@@ -1,5 +1,10 @@
 package info.Zealandia.app;
 
+
+/**
+ * Created by 21104216 on 2/05/2015.
+ */
+
 public class AppConfig {
 	// Server user login url
 	public static String URL_LOGIN = "http://yar.cloudns.org/SlimApi/api/login";

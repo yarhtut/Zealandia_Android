@@ -1,5 +1,9 @@
 package info.Zealandia;
 
+/**
+ * Author: Yar HTUT - 21104216
+ * URL: www.yar.cloudns.org
+ * */
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -14,10 +18,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import info.Zealandia.app.CacheHelper;
+
 import info.Zealandia.fragment.InsectView;
 import info.Zealandia.fragment.MammalView;
-import info.Zealandia.fragment.OtherView;
 import info.Zealandia.fragment.PlantView;
 import info.Zealandia.tabs.SlidingTabLayout;
 
@@ -44,20 +47,24 @@ public class MainActivity extends ActionBarActivity {
         // changing action bar color
 
         super.onCreate(savedInstanceState);
-
+        //view content from XML file
         setContentView(R.layout.activity_main);
 
-
+        //custom toolbar
         toolbar = (Toolbar) findViewById(R.id.app_bar);
         setSupportActionBar(toolbar);
 
+        //home icon display
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        //define navigation drawer and pull the Xml
         NavigationDrawerFragment drawerLayout = (NavigationDrawerFragment)
                 getSupportFragmentManager().findFragmentById(R.id.fragment_navigation_drawer);
-
+        //
+        //setup drawer layout fragment and tool bar and navigation fragment in main activity
         drawerLayout.setUp(R.id.fragment_navigation_drawer, (DrawerLayout) findViewById(R.id.drawer_layout), toolbar);
 
+        //sliding tab
         mPager = (ViewPager) findViewById(R.id.pager);
         mPager.setAdapter(new MyPagerAdapter(getSupportFragmentManager()));
 
@@ -89,15 +96,16 @@ public class MainActivity extends ActionBarActivity {
         }
 
         if (id == R.id.navigate) {
-            startActivity(new Intent(this, SchoolActivity.class));
+            //startActivity(new Intent(this, SchoolActivity.class));
             // Toast.makeText(this,"This is my navigation action bar click" + item.getTitle(),Toast.LENGTH_LONG).show();
             return true;
         }
 
         return super.onOptionsItemSelected(item);
     }
+    //new Adapter class for navigation drawer
     class MyPagerAdapter extends FragmentPagerAdapter{
-
+            //did not use
         int icons[] = {R.drawable.bird,
                 R.drawable.insect,
                 R.drawable.plant};
@@ -112,7 +120,7 @@ public class MainActivity extends ActionBarActivity {
         public Fragment getItem(int num) {
             //  return MyFragment.getInstance(num);
             Fragment fragment = null;
-            //L.m("getItem called for " + num);
+            ////tab for each catagoris fragment
             switch (num) {
                 case TAB_BIRD:
                     fragment =  info.Zealandia.fragment.BirdView.newInstance("", "");

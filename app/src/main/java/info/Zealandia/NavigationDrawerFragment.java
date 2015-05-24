@@ -1,3 +1,6 @@
+/**
+ * Created by 21104216 on 6/04/2015.
+ */
 package info.Zealandia;
 
 import android.content.Context;
@@ -18,16 +21,22 @@ import java.util.List;
 import info.Zealandia.R;
 
 
+
+   // navigation drawer class
 public class NavigationDrawerFragment extends Fragment {
 
     private RecyclerView recyclerView;
     public ZViewAdapter adapter;
 
+
     public static final String PREF_FILE_NAME="testpref";
     public static final String KEY_USER_LEAENER_DRAWER="user_learned_drawer";
+
     private ActionBarDrawerToggle mDrawerToggle;
     private DrawerLayout mDrawerLayout;
     private View containerView;
+
+       //on create which manage boolean option for two activity
     private boolean mUserLearnedDrawer;
     private boolean mFromInstanceState;
 
@@ -70,19 +79,29 @@ public class NavigationDrawerFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View layout=inflater.inflate(R.layout.fragment_navigation_drawer, container, false);
+
+        //recycler view for left navigation fragment
         recyclerView = (RecyclerView) layout.findViewById(R.id.drawerList);
 
+
         adapter = new ZViewAdapter(getActivity(),getData());
-          recyclerView.setAdapter(adapter);
+        recyclerView.setAdapter(adapter);
        recyclerView.setLayoutManager( new LinearLayoutManager(getActivity()));
 
         return layout;
     }
+
+       //array for the recycler view
     public List<Information> getData()
     {
+        //define array
         List<Information> data = new ArrayList<>();
+
+        //icon for navigation drawer
         int[] icons= {android.R.drawable.ic_menu_gallery, android.R.drawable.ic_menu_myplaces};
+        //list for navigation drawer
         String[] titles = {"Sanctuary View","Login"};
+        //loop through the icon and list arry to show recycler view
         for(int i=0; i<titles.length && i<icons.length ;i++)
         {
             Information current = new Information();
@@ -92,6 +111,7 @@ public class NavigationDrawerFragment extends Fragment {
         }
         return data;
     }
+    //setup toobar , fragment to share in one activity
 
     public void setUp(int fragmentId,DrawerLayout drawerLayout, final Toolbar toolbar) {
         containerView = getActivity().findViewById(fragmentId);

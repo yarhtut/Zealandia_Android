@@ -1,6 +1,7 @@
 /**
  * Author: Yar HTUT
  * URL: www.yar.cloudns.org
+ * We did not use this class but I just leave it for future developement
  *
  * */
 package info.Zealandia;
@@ -67,9 +68,9 @@ public class RegisterActivity extends Activity {
 		// Check if user is already logged in or not
 		if (session.isLoggedIn()) {
 			// User is already logged in. Take him to main activity
-			Intent intent = new Intent(RegisterActivity.this,
-					SchoolActivity.class);
-			startActivity(intent);
+			//Intent intent = new Intent(RegisterActivity.this,
+					//SanctuaryActivity.class);
+			//startActivity(intent);
 			finish();
 		}
 

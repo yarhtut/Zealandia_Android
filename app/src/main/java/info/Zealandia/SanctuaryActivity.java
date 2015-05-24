@@ -1,5 +1,7 @@
 /**
  * Created by 21104216 on 2/04/2015.
+ *
+ * school activity class
  */
 
 package info.Zealandia;
@@ -67,21 +69,26 @@ public class SanctuaryActivity extends ActionBarActivity {
 
     private int _catId;
 
-
+    // private ActivitySQLiteHandler activityDb;
     private SQLiteHandler db;
-   // private ActivitySQLiteHandler activityDb;
+
     private SessionManager session;
 
     public Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        /**
+         * should implent page reload on scroll down
+         */
+        //reload new cache
+        CacheHelper.getInstance().getAllList();
         setContentView(R.layout.activity_sanctuary);
-
+        //set tool bar
         toolbar = (Toolbar) findViewById(R.id.app_bar);
 
         setSupportActionBar(toolbar);
-
+        //support back or home button
         getSupportActionBar().setHomeButtonEnabled(true);
 
 
@@ -90,22 +97,26 @@ public class SanctuaryActivity extends ActionBarActivity {
         // SqLite database handler
         db = new SQLiteHandler(getApplicationContext());
 
-        // School Activity Database SqLite database handler
-       // activityDb = new ActivitySQLiteHandler(getApplicationContext());
+
 
         // session manager
         session = new SessionManager(getApplicationContext());
 
-        //SQLiteHandler dbtest = new SQLiteHandler(getApplicationContext());
 
-       // HashMap<String, String> getUserDetails = db.getUserDetails();
-       // Log.d("SPLASH_SCREEN", "Fetching user detials SQLite: " + getUserDetails.toString());
 
+
+        //if user not loggin
         if (!session.isLoggedIn()) {
             logoutUser();
         }
+
+        //define and view the listview
         listView = (ListView) findViewById(R.id.list);
-        CacheHelper.getInstance().getAllList();
+
+
+
+
+        //only show active item on the list view
         birdList = CacheHelper.getInstance().updateTabFromJSON("active");
 
         adapter = new BirdAdapter(this, birdList);
@@ -129,16 +140,10 @@ public class SanctuaryActivity extends ActionBarActivity {
 
              catId = (TextView) view.findViewById(R.id.textViewID);
              _catId = Integer.parseInt(catId.getText().toString());
-            //db.insectCategoriesId(_catId);
-            // String CLICKED = db.getUpdateClicked(_catId);
-            //  StringBuffer buffer=new StringBuffer();
-            // Toast.makeText(SanctuaryActivity.this,CLICKED, Toast.LENGTH_SHORT).show();
-            //showMessage("Student Clicked", CLICKED.toString());
-
-            //http://stackoverflow.com/questions/2115758/how-to-display-alert-dialog-in-android
 
 
-            new AlertDialog.Builder(SanctuaryActivity.this)
+             //http://stackoverflow.com/questions/2115758/how-to-display-alert-dialog-in-android
+              new AlertDialog.Builder(SanctuaryActivity.this)
                     .setTitle("ARE YOU SURE?")
                     .setMessage("Do you want to add this Categories into your lists? " + " " +  _catId )
                     .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
@@ -150,8 +155,7 @@ public class SanctuaryActivity extends ActionBarActivity {
                             Toast.makeText(getApplicationContext(),
                                     "You clicked!"+CLICKED, Toast.LENGTH_LONG)
                                     .show();
-                             //showMessage("You have  Clicked", "" + CLICKED + " times");
-                           // showMessage(db.getUserDetailsAsJson(), db.getResults().toString());
+
 
                         }
                     })
@@ -254,7 +258,7 @@ public class SanctuaryActivity extends ActionBarActivity {
         super.onDestroy();
         hidePDialog();
     }
-
+    //hide dialog
     private void hidePDialog() {
         if (pDialog != null) {
             pDialog.dismiss();
@@ -269,7 +273,7 @@ public class SanctuaryActivity extends ActionBarActivity {
         getMenuInflater().inflate(R.menu.menu_sub, menu);
         return true;
     }
-
+        //sync data from sqlite to Api
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
@@ -358,7 +362,7 @@ public class SanctuaryActivity extends ActionBarActivity {
 
 
 
-            // Toast.makeText(this,"This is my navigation action bar click" + item.getTitle(),Toast.LENGTH_LONG).show();
+
             return true;
         }
         if (id == R.id.logout_menu) {
@@ -384,6 +388,7 @@ public class SanctuaryActivity extends ActionBarActivity {
         startActivity(intent);
         finish();
     }
+    //showMessage has some issue for Samsung Galaxy s4
     public void showMessage(String title,String message)
     {
         AlertDialog.Builder builder=new AlertDialog.Builder(this);

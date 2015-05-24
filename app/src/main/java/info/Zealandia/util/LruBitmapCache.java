@@ -5,6 +5,8 @@ import android.support.v4.util.LruCache;
 
 import com.android.volley.toolbox.ImageLoader.ImageCache;
 
+
+//Volley default mamory caching
 public class LruBitmapCache extends LruCache<String, Bitmap> implements
 		ImageCache {
 	public static int getDefaultLruCacheSize() {

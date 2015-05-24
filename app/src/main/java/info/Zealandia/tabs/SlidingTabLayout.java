@@ -14,6 +14,13 @@ import android.view.ViewGroup;
 import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+/**
+ * This is sliding tab plugin not my one
+ * I used it then I don't like it
+ * so I do not used it
+ * but I leave it for other people
+ *
+ */
 
 /**
  * To be used with ViewPager to provide a tab indicator component which give constant feedback as to

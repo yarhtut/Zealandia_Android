@@ -58,9 +58,6 @@ public class InsectView extends Fragment  {
     }
 
 
-   // private BirdAdapter adapter;
-
-    //   private BirdAdapter adapter;
 
 
     // TODO: Rename and change types of parameters

@@ -30,7 +30,9 @@ public class SplashScreen extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
-
+        //check internet connection
+        //but still issues with RADIUS server because device can only check  connection of the wifi or 3g
+        //can't check the real internet connect
         try{
 
             ConnectivityManager cm =

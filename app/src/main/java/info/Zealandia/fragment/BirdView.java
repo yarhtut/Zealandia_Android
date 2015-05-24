@@ -1,28 +1,19 @@
+
+/**
+ * Created by 21104216 on 20/04/2015.
+ */
 package info.Zealandia.fragment;
 
-
 import android.app.ProgressDialog;
-
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.android.volley.Response;
-import com.android.volley.ServerError;
-import com.android.volley.TimeoutError;
-import com.android.volley.VolleyError;
-import com.android.volley.VolleyLog;
-import com.android.volley.toolbox.JsonArrayRequest;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.util.ArrayList;
 
@@ -32,13 +23,13 @@ import info.Zealandia.app.AppController;
 import info.Zealandia.app.CacheHelper;
 import info.Zealandia.model.SanctuaryView;
 import info.Zealandia.R;
-
-
 /**
  * A simple {@link android.support.v4.app.Fragment} subclass.
  * Use the {@link BirdView#newInstance} factory method to
  * create an instance of th fragment.
  */
+
+
 public class BirdView extends Fragment  {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -106,14 +97,14 @@ public class BirdView extends Fragment  {
         // Inflate the layout for this fragment
         View view =  inflater.inflate(R.layout.fragment_bird_view, container, false);
 
-
+        //recycler view for tab fragment
         RecyclerBird = (RecyclerView) view.findViewById(R.id.RecyclerListBird);
 
         RecyclerBird.setLayoutManager(new LinearLayoutManager(getActivity()));
         adapter = new AdapterBirdRecyclerList(getActivity());
         RecyclerBird.setAdapter(adapter);
         //Set adapter
-
+        //set adapter and only show birds cat in this fragment
         birdList = CacheHelper.getInstance().updateTabFromJSON("birds");
         adapter.setListBird(birdList);
         adapter.notifyDataSetChanged();

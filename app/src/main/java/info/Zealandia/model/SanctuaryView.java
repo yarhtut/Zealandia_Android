@@ -6,6 +6,8 @@ package info.Zealandia.model;
  *
  * */
 
+
+//getter and setter
 public class SanctuaryView  {
     private String list_id;
     private String list_cat;

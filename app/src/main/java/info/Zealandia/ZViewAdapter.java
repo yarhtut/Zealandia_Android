@@ -57,6 +57,12 @@ public class ZViewAdapter extends RecyclerView.Adapter<ZViewAdapter.MyZViewHolde
        return data.size();
     }
 
+    //
+    //this class is for recycler view in left hand fragment
+    //
+
+
+    //left hand navigation drawer fragment recycler view list clicked
     class MyZViewHolder extends  RecyclerView.ViewHolder implements View.OnClickListener{
         TextView title;
         ImageView icon;
@@ -67,9 +73,7 @@ public class ZViewAdapter extends RecyclerView.Adapter<ZViewAdapter.MyZViewHolde
             icon = (ImageView) itemView.findViewById(R.id.listIcon);
 
            //icon.setOnClickListener(this);
-           // title.setOnClickListener(this);
-
-
+           //title.setOnClickListener(this);
         }
 
             @Override

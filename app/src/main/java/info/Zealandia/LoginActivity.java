@@ -20,7 +20,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 
-import org.json.JSONArray;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -31,10 +31,13 @@ import info.Zealandia.app.AppController;
 import info.Zealandia.app.AppConfig;
 import info.Zealandia.dbhelper.SQLiteHandler;
 import info.Zealandia.dbhelper.SessionManager;
-import info.Zealandia.fragment.BirdView;
-import info.Zealandia.model.SanctuaryView;
 
 
+/**
+ *  Login Class  actually planed to use email and password to login but
+ *  don't need register so I just leave it as email(username) but don't have to use email
+ *
+ */
 public class LoginActivity extends Activity {
 	// LogCat tag
 	private static final String TAG = RegisterActivity.class.getSimpleName();
@@ -53,6 +56,7 @@ public class LoginActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_login);
 
+		//define input field and button
 		inputEmail = (EditText) findViewById(R.id.email);
 		inputPassword = (EditText) findViewById(R.id.password);
 		btnLogin = (Button) findViewById(R.id.btnLogin);
@@ -96,13 +100,14 @@ public class LoginActivity extends Activity {
 
 		});
 
-		// Link to Register Screen
+		// Link to Register Screen  // this wouldn't work unless you cancle the commant inside
+		//function.. have not implement the register function in PHP API
 		btnLinkToRegister.setOnClickListener(new View.OnClickListener() {
 
 			public void onClick(View view) {
-				Intent i = new Intent(getApplicationContext(),
-						RegisterActivity.class);
-				startActivity(i);
+				//Intent i = new Intent(getApplicationContext(),
+					//	RegisterActivity.class);
+				//startActivity(i);
 				finish();
 			}
 		});
@@ -118,7 +123,7 @@ public class LoginActivity extends Activity {
 
 		pDialog.setMessage("Logging in ...");
 		showDialog();
-
+		// json Volley request to check login
 		StringRequest strReq = new StringRequest(Method.POST,
 				AppConfig.URL_LOGIN, new Response.Listener<String>() {
 

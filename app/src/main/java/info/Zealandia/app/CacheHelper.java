@@ -52,10 +52,6 @@ public class CacheHelper {
             response = new JSONArray(theResponse);
             Log.d("Error checking 1", response.toString());
 
-           // if(response.length()== 0){
-              //  getAllList();
-            //}
-
 
 
         } catch (Exception e) {

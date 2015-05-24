@@ -3,7 +3,7 @@ package info.Zealandia.app;
 import android.app.Application;
 import android.content.Context;
 import android.text.TextUtils;
-import android.util.Log;
+
 
 import com.android.volley.Network;
 import com.android.volley.Request;
@@ -13,11 +13,7 @@ import com.android.volley.toolbox.DiskBasedCache;
 import com.android.volley.toolbox.HttpStack;
 import com.android.volley.toolbox.HurlStack;
 import com.android.volley.toolbox.ImageLoader;
-import com.android.volley.toolbox.Volley;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -26,10 +22,13 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
-import java.util.ArrayList;
 
-import info.Zealandia.model.SanctuaryView;
 import info.Zealandia.util.LruBitmapCache;
+
+
+//volley library as singleton
+//discaching for offline json data
+
 
 public class AppController extends Application {
 	public static final String TAG = AppController.class.getSimpleName();
@@ -135,7 +134,7 @@ public class AppController extends Application {
 		}
 	}
 
-	//Our own storage
+	//Our own storage to storage file
 	public String readFromCache(String theStoreFileName) {
 
 		String ret = "";
