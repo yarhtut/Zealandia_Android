@@ -4,6 +4,8 @@ package info.Zealandia;
  * Author: Yar HTUT - 21104216
  * URL: www.yar.cloudns.org
  * */
+import android.content.Context;
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -29,6 +31,7 @@ public class MainActivity extends ActionBarActivity {
     public Toolbar toolbar;
     private ViewPager mPager;
     private SlidingTabLayout mTabs;
+    public Context context;
     public static final int TAB_BIRD = 0;
     //int corresponding to our 1st tab corresponding to the Fragment where  hits are dispalyed
     public static final int TAB_INSECT = 1;
@@ -90,13 +93,16 @@ public class MainActivity extends ActionBarActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            Toast.makeText(this, "Hay you just click" + item.getTitle(), Toast.LENGTH_SHORT).show();
+            if (id == R.id.menu_login) {
+                Intent intent = new Intent(this, LoginActivity.class);
+                startActivity(intent);
+               // context.startActivity(new Intent(context, LoginActivity.class));
+           // Toast.makeText(this, "Hay you just click" + item.getTitle(), Toast.LENGTH_SHORT).show();
             return true;
         }
 
         if (id == R.id.navigate) {
-            //startActivity(new Intent(this, SchoolActivity.class));
+
             // Toast.makeText(this,"This is my navigation action bar click" + item.getTitle(),Toast.LENGTH_LONG).show();
             return true;
         }

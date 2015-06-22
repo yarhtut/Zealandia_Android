@@ -12,11 +12,12 @@
 
    <item android:id="@+id/navigate"
         android:title="@string/action_bar_next"
-        android:icon="@drawable/nextbtn"
+
         android:orderInCategory="100"
        app:theme="@style/MyCustomToolBarTheme"
        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
       ></item>
 
 </menu>
+
     <!-- app:theme="@style/MyCustomToolBarTheme"-->

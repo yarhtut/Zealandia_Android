@@ -1428,21 +1428,18 @@ containing a value of this type.
         public static final int abc_textfield_search_material=0x7f020036;
         public static final int bird=0x7f020037;
         public static final int custom_list_view=0x7f020038;
-        public static final int ic_action_articles=0x7f020039;
-        public static final int insect=0x7f02003a;
-        public static final int item_bg=0x7f02003b;
-        public static final int left_arrow=0x7f02003c;
-        public static final int list_row_bg=0x7f02003d;
-        public static final int list_row_bg_hover=0x7f02003e;
-        public static final int list_row_selector=0x7f02003f;
-        public static final int log=0x7f020040;
-        public static final int main_logo=0x7f020041;
-        public static final int next=0x7f020042;
-        public static final int nextbtn=0x7f020043;
-        public static final int plant=0x7f020044;
-        public static final int right_arrow=0x7f020045;
-        public static final int sync=0x7f020046;
-        public static final int tab_bg=0x7f020047;
+        public static final int insect=0x7f020039;
+        public static final int item_bg=0x7f02003a;
+        public static final int left_arrow=0x7f02003b;
+        public static final int list_row_bg=0x7f02003c;
+        public static final int list_row_bg_hover=0x7f02003d;
+        public static final int list_row_selector=0x7f02003e;
+        public static final int log=0x7f02003f;
+        public static final int main_logo=0x7f020040;
+        public static final int plant=0x7f020041;
+        public static final int right_arrow=0x7f020042;
+        public static final int sync=0x7f020043;
+        public static final int tab_bg=0x7f020044;
     }
     public static final class id {
         public static final int RecyclerListBird=0x7f090058;
@@ -1504,9 +1501,10 @@ containing a value of this type.
         public static final int listMode=0x7f09000b;
         public static final int listText=0x7f090067;
         public static final int list_item=0x7f09002b;
-        public static final int logout_menu=0x7f09007c;
+        public static final int logout_menu=0x7f09007d;
         public static final int main_frame_layout=0x7f09004e;
         public static final int materialTabHost=0x7f090055;
+        public static final int menu_login=0x7f09007c;
         public static final int middle=0x7f09001b;
         public static final int name=0x7f09004f;
         public static final int navigate=0x7f09007b;
@@ -1546,7 +1544,7 @@ containing a value of this type.
         public static final int swipeMammalList=0x7f09005c;
         public static final int swipeOtherList=0x7f090062;
         public static final int swipePlantList=0x7f090064;
-        public static final int syncData=0x7f09007d;
+        public static final int syncData=0x7f09007e;
         public static final int tabMode=0x7f09000d;
         public static final int tabs=0x7f09004b;
         public static final int text=0x7f09006f;
