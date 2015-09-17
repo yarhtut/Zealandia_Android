@@ -5,8 +5,9 @@ Yar Thet Pan Kyaw Htut(Developer) and Leon Ngatai (BA).
 
 Total 16 weeks long project but actual coding part was only 11 weeks.
 
-This projects had been given to Whitireia for 3 semesters but Yar Htut and Leon Ngatai did not used any of the previous code or design.
+This projects had been given to Whitireia for 3 semesters but Yar Htut and Leon Ngatai did not used any of the previous code or design and they had completed the project.
 
+Android App and Web Api had need to do a little bit more work for production.
 
 
 #Background
