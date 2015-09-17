@@ -45,8 +45,7 @@ To adopt Zealandia School activities which currently used in paper type to Andro
 - need to comment it out all the debug message (toast)
 - Notification fixes fo RADIUS wifi connection.
 
--   
--   Also need to add the features 
+
 
 
 
