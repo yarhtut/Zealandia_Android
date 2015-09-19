@@ -1,7 +1,7 @@
 # Zelandia_PHP_Slim_Api
 
 ##Team
-Yar Thet Pan Kyaw Htut(Developer) and Leon Ngatai (BA).                      
+Yar Thet Pan Kyaw Htut(Developer) and Leon Ngatai (BA).     (Diskcache was fixed by lukeUbuntu)                 
 
 Total 16 weeks long project but actual coding part was only 11 weeks.
 
